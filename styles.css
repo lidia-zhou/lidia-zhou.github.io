@@ -4633,6 +4633,12 @@ html .publication-card .tag.journal {
   color: #0f4f55 !important;
 }
 
+html .publication-card .tag.preprint {
+  border-color: #7a6a58 !important;
+  background: #f3f0eb !important;
+  color: #7a6a58 !important;
+}
+
 html .publication-card .tag.chapter {
   border-color: #b6cfc8 !important;
   background: #edf6f3 !important;

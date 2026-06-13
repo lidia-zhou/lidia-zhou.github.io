@@ -1,15 +1,15 @@
 window.SITE_CONTENT = {
   profile: {
     brand: "Lidia Zhou Mengyuan",
-    role: "AI and Culture / Digital Humanities / Translation Studies",
+    role: "AI and Culture / Digital Humanities / Translation Studies / Cultural Analytics",
     affiliation: "Department of Translation, The Chinese University of Hong Kong",
     office: "Room 110, Leung Kau Kui Building",
-    email: "lidiazhou[at]cuhk.edu.hk",
+    email: "lidiazhou@cuhk.edu.hk",
     orcid: "0000-0002-7054-8800"
   },
 
   home: {
-    kicker: "Assistant Professor / AI Humanities Researcher",
+    kicker: "Assistant Professor / Digital Humanities Researcher",
     title: "AI, culture, and the digital life of literature.",
     paragraphs: [
       "My research examines both AI in culture and culture in AI. I study how artificial intelligence reshapes creativity, cultural understanding, literary value, and cross-cultural communication, while also using AI and computational methods to investigate literature, language, and translation.",
@@ -25,7 +25,7 @@ window.SITE_CONTENT = {
     interests: [
       "AI and cultural analytics",
       "Digital humanities and bibliographic metadata",
-      "Translation circulation"
+      "Translation, circulation, and literary prestige"
     ],
     news: [
       {
@@ -42,7 +42,7 @@ window.SITE_CONTENT = {
       },
       {
         date: "Jun 2026",
-        text: "Will present at the NYU Shanghai-NYU Madrid conference Whose East, Whose West in Madrid.",
+        text: "Will present at the NYU Shanghai-NYU Madrid conference in Madrid.",
         href: "https://wp.nyu.edu/nyushanghai-madrid/",
         linkText: "NYU Shanghai-NYU Madrid"
       },
@@ -137,6 +137,13 @@ window.SITE_CONTENT = {
   ],
 
   publications: [
+    {
+      type: "preprint",
+      typeLabel: "Preprint",
+      title: "Politically speaking: LLMs on changing international affairs",
+      citation: "Cao, X., Chung, W. K., Zhao, Y., & Zhou, M. (2025). arXiv preprint.",
+      links: [{ label: "arXiv", href: "http://arxiv.org/abs/2510.24582" }]
+    },
     {
       type: "journal",
       typeLabel: "Journal Article",

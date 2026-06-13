@@ -130,6 +130,7 @@ const renderContent = () => {
   }
 
   const groupLabels = {
+    preprint: 'Preprints',
     journal: 'Journal Articles',
     chapter: 'Book Chapters',
     proceeding: 'Conference Proceedings',
