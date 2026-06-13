@@ -4552,6 +4552,282 @@ a,
   border-color: #e5e5e5 !important;
 }
 
+/* True final control palette: black-white actions + pale blue tags */
+html body {
+  background: #ffffff !important;
+}
+
+html a,
+html .site-nav a:hover,
+html .site-nav a[aria-current="true"],
+html .site-nav a[aria-current="page"],
+html .news-list a,
+html .brief-news a,
+html .brief-list a,
+html .pub-links,
+html .pub-links a {
+  color: #2f5968 !important;
+  text-decoration-color: rgba(47, 89, 104, 0.32) !important;
+}
+
+html .keyword-strip span,
+html .project-card .project-tags span,
+html .filter-button,
+html .link-grid a {
+  border-color: #c9dde5 !important;
+  background: #eef7fb !important;
+  color: #2f5968 !important;
+}
+
+html .link-grid a:hover,
+html .button.primary,
+html .filter-button:hover,
+html .filter-button.active {
+  border-color: #181818 !important;
+  background: #181818 !important;
+  color: #ffffff !important;
+}
+
+html .button.secondary {
+  border-color: #d9e5ea !important;
+  background: #ffffff !important;
+  color: #181818 !important;
+}
+
+html .project-card .project-meta span {
+  border-color: #181818 !important;
+  background: #181818 !important;
+  color: #ffffff !important;
+}
+
+html .project-card .project-meta span:nth-child(2) {
+  border-color: #c9dde5 !important;
+  background: #eef7fb !important;
+  color: #2f5968 !important;
+}
+
+html .project-card .project-meta span:nth-child(3) {
+  border-color: #2f5968 !important;
+  background: #2f5968 !important;
+  color: #ffffff !important;
+}
+
+html .publication-card .tag.journal {
+  border-color: #c9dde5 !important;
+  background: #eef7fb !important;
+  color: #2f5968 !important;
+}
+
+html .publication-card .tag.chapter {
+  border-color: #d6e8ef !important;
+  background: #f5fbfd !important;
+  color: #426a78 !important;
+}
+
+html .publication-card .tag.proceeding {
+  border-color: #2f5968 !important;
+  background: #2f5968 !important;
+  color: #ffffff !important;
+}
+
+html .publication-card .tag.conference {
+  border-color: #d9e5ea !important;
+  background: #f8fbfc !important;
+  color: #4f6470 !important;
+}
+
+html .publication-card .tag.review,
+html .publication-card .tag.preprint {
+  border-color: #d7cec5 !important;
+  background: #faf7f3 !important;
+  color: #7a6a58 !important;
+}
+
+/* True final control palette: black-white actions + pale blue tags */
+html body {
+  background: #ffffff !important;
+}
+
+html a,
+html .site-nav a:hover,
+html .site-nav a[aria-current="true"],
+html .site-nav a[aria-current="page"],
+html .news-list a,
+html .brief-news a,
+html .brief-list a,
+html .pub-links,
+html .pub-links a {
+  color: #2f5968 !important;
+  text-decoration-color: rgba(47, 89, 104, 0.32) !important;
+}
+
+html .keyword-strip span,
+html .project-card .project-tags span,
+html .filter-button,
+html .link-grid a {
+  border-color: #c9dde5 !important;
+  background: #eef7fb !important;
+  color: #2f5968 !important;
+}
+
+html .link-grid a:hover,
+html .button.primary,
+html .filter-button:hover,
+html .filter-button.active {
+  border-color: #181818 !important;
+  background: #181818 !important;
+  color: #ffffff !important;
+}
+
+html .button.secondary {
+  border-color: #d9e5ea !important;
+  background: #ffffff !important;
+  color: #181818 !important;
+}
+
+html .project-card .project-meta span {
+  border-color: #181818 !important;
+  background: #181818 !important;
+  color: #ffffff !important;
+}
+
+html .project-card .project-meta span:nth-child(2) {
+  border-color: #c9dde5 !important;
+  background: #eef7fb !important;
+  color: #2f5968 !important;
+}
+
+html .project-card .project-meta span:nth-child(3) {
+  border-color: #2f5968 !important;
+  background: #2f5968 !important;
+  color: #ffffff !important;
+}
+
+html .publication-card .tag.journal {
+  border-color: #c9dde5 !important;
+  background: #eef7fb !important;
+  color: #2f5968 !important;
+}
+
+html .publication-card .tag.chapter {
+  border-color: #d6e8ef !important;
+  background: #f5fbfd !important;
+  color: #426a78 !important;
+}
+
+html .publication-card .tag.proceeding {
+  border-color: #2f5968 !important;
+  background: #2f5968 !important;
+  color: #ffffff !important;
+}
+
+html .publication-card .tag.conference {
+  border-color: #d9e5ea !important;
+  background: #f8fbfc !important;
+  color: #4f6470 !important;
+}
+
+html .publication-card .tag.review,
+html .publication-card .tag.preprint {
+  border-color: #d7cec5 !important;
+  background: #faf7f3 !important;
+  color: #7a6a58 !important;
+}
+
+/* Final control color revision: black-white actions with pale blue tags */
+:root {
+  --teal: #2f5968;
+  --sage: #eef7fb;
+  --sage-deep: #2f5968;
+  --blue: #2f5968;
+  --wine: #7a6a58;
+}
+
+html a,
+html .site-nav a:hover,
+html .site-nav a[aria-current="true"],
+html .site-nav a[aria-current="page"],
+html .news-list a,
+html .brief-news a,
+html .brief-list a,
+html .pub-links,
+html .pub-links a {
+  color: #2f5968 !important;
+}
+
+html .keyword-strip span,
+html .project-card .project-tags span,
+html .filter-button,
+html .link-grid a {
+  border-color: #c9dde5 !important;
+  background: #eef7fb !important;
+  color: #2f5968 !important;
+}
+
+html .link-grid a:hover,
+html .button.primary,
+html .filter-button:hover,
+html .filter-button.active {
+  border-color: #181818 !important;
+  background: #181818 !important;
+  color: #ffffff !important;
+}
+
+html .button.secondary {
+  border-color: #d9e5ea !important;
+  background: #ffffff !important;
+  color: #181818 !important;
+}
+
+html .project-card .project-meta span {
+  border-color: #181818 !important;
+  background: #181818 !important;
+  color: #ffffff !important;
+}
+
+html .project-card .project-meta span:nth-child(2) {
+  border-color: #c9dde5 !important;
+  background: #eef7fb !important;
+  color: #2f5968 !important;
+}
+
+html .project-card .project-meta span:nth-child(3) {
+  border-color: #2f5968 !important;
+  background: #2f5968 !important;
+  color: #ffffff !important;
+}
+
+html .publication-card .tag.journal {
+  border-color: #c9dde5 !important;
+  background: #eef7fb !important;
+  color: #2f5968 !important;
+}
+
+html .publication-card .tag.chapter {
+  border-color: #d6e8ef !important;
+  background: #f5fbfd !important;
+  color: #426a78 !important;
+}
+
+html .publication-card .tag.proceeding {
+  border-color: #2f5968 !important;
+  background: #2f5968 !important;
+  color: #ffffff !important;
+}
+
+html .publication-card .tag.conference {
+  border-color: #d9e5ea !important;
+  background: #f8fbfc !important;
+  color: #4f6470 !important;
+}
+
+html .publication-card .tag.review,
+html .publication-card .tag.preprint {
+  border-color: #d7cec5 !important;
+  background: #faf7f3 !important;
+  color: #7a6a58 !important;
+}
+
 /* Exact final theme: match the preferred About-page look */
 html body {
   background: #ffffff !important;
@@ -4819,18 +5095,18 @@ a,
   border-color: #e4e8e2 !important;
 }
 
-/* Final palette lock: white + deep green, with warm taupe instead of wine red */
+/* Final palette lock: white + pale blue controls */
 :root {
   --paper: #ffffff;
   --surface: #ffffff;
   --ink: #181818;
   --muted: #5f646b;
   --line: #e5e5e5;
-  --teal: #125c63;
-  --sage: #f3f7f5;
-  --sage-deep: #466f61;
+  --teal: #2f5968;
+  --sage: #eef7fb;
+  --sage-deep: #2f5968;
   --clay: #7a6a58;
-  --blue: #355a7d;
+  --blue: #2f5968;
   --wine: #7a6a58;
   --shadow: 0 18px 50px rgba(36, 31, 26, 0.08);
   --shadow-soft: 0 10px 28px rgba(36, 31, 26, 0.07);
@@ -4859,17 +5135,17 @@ a,
 .brief-list a,
 .pub-links,
 .pub-links a {
-  color: #125c63;
-  text-decoration-color: rgba(18, 92, 99, 0.36);
+  color: #2f5968;
+  text-decoration-color: rgba(47, 89, 104, 0.32);
 }
 
 .keyword-strip span,
 .project-card .project-tags span,
 .filter-button,
 .link-grid a {
-  border-color: #ccd9d4 !important;
-  background: #f3f7f5 !important;
-  color: #125c63 !important;
+  border-color: #c9dde5 !important;
+  background: #eef7fb !important;
+  color: #2f5968 !important;
 }
 
 .button.primary,
@@ -4887,45 +5163,45 @@ a,
 }
 
 .project-card .project-meta span {
-  border-color: #125c63 !important;
-  background: #125c63 !important;
+  border-color: #181818 !important;
+  background: #181818 !important;
   color: #ffffff !important;
 }
 
 .project-card .project-meta span:nth-child(2) {
-  border-color: #9eb9ad !important;
-  background: #e6f0ea !important;
-  color: #125c63 !important;
+  border-color: #c9dde5 !important;
+  background: #eef7fb !important;
+  color: #2f5968 !important;
 }
 
 .project-card .project-meta span:nth-child(3) {
-  border-color: #7a6a58 !important;
-  background: #7a6a58 !important;
+  border-color: #2f5968 !important;
+  background: #2f5968 !important;
   color: #ffffff !important;
 }
 
 .publication-card .tag.journal {
-  border-color: #8ab1a7 !important;
-  background: #dcece7 !important;
-  color: #0f4f55 !important;
+  border-color: #c9dde5 !important;
+  background: #eef7fb !important;
+  color: #2f5968 !important;
 }
 
 .publication-card .tag.chapter {
-  border-color: #b6cfc8 !important;
-  background: #edf6f3 !important;
-  color: #125c63 !important;
+  border-color: #d6e8ef !important;
+  background: #f5fbfd !important;
+  color: #426a78 !important;
 }
 
 .publication-card .tag.proceeding {
-  border-color: #125c63 !important;
-  background: #125c63 !important;
+  border-color: #2f5968 !important;
+  background: #2f5968 !important;
   color: #ffffff !important;
 }
 
 .publication-card .tag.conference {
-  border-color: #cbd9d3 !important;
-  background: #f3f7f5 !important;
-  color: #466f61 !important;
+  border-color: #d9e5ea !important;
+  background: #f8fbfc !important;
+  color: #4f6470 !important;
 }
 
 .publication-card .tag.review {
@@ -4935,7 +5211,7 @@ a,
 }
 
 .news-list time {
-  color: #125c63 !important;
+  color: #2f5968 !important;
 }
 
 .brand-mark {
