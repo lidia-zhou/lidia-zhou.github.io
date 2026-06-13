@@ -1,15 +1,15 @@
 window.SITE_CONTENT = {
   profile: {
     brand: "Lidia Zhou Mengyuan",
-    role: "AI and Culture / Digital Humanities / Translation Studies / Cultural Analytics",
+    role: "AI and Culture / Digital Humanities / Translation Studies",
     affiliation: "Department of Translation, The Chinese University of Hong Kong",
     office: "Room 110, Leung Kau Kui Building",
-    email: "lidiazhou@cuhk.edu.hk",
+    email: "lidiazhou [at]cuhk.edu.hk",
     orcid: "0000-0002-7054-8800"
   },
 
   home: {
-    kicker: "Assistant Professor / Digital Humanities Researcher",
+    kicker: "Assistant Professor / AI Humanities Researcher",
     title: "AI, culture, and the digital life of literature.",
     paragraphs: [
       "My research examines both AI in culture and culture in AI. I study how artificial intelligence reshapes creativity, cultural understanding, literary value, and cross-cultural communication, while also using AI and computational methods to investigate literature, language, and translation.",
@@ -25,7 +25,7 @@ window.SITE_CONTENT = {
     interests: [
       "AI and cultural analytics",
       "Digital humanities and bibliographic metadata",
-      "Translation, circulation, and literary prestige"
+      "Translation circulation"
     ],
     news: [
       {
@@ -270,7 +270,7 @@ window.SITE_CONTENT = {
   ],
 
   contact: {
-    heading: "For collaboration, talks, or student research enquiries, please get in touch.",
-    email: "lidiazhou@cuhk.edu.hk"
+    heading: "For collaboration, talks, or student research enquiries, please get in touch!",
+    email: "lidiazhou[at]cuhk.edu.hk"
   }
 };
