@@ -5,10 +5,10 @@
   <path d="M32 36c14 0 24 4 32 13v47c-8-9-18-13-32-13z" fill="#ffffff" stroke="#181818" stroke-width="7" stroke-linejoin="round"/>
   <path d="M96 36c-14 0-24 4-32 13v47c8-9 18-13 32-13z" fill="#ffffff" stroke="#181818" stroke-width="7" stroke-linejoin="round"/>
   <path d="M64 49v47" fill="none" stroke="#181818" stroke-width="7" stroke-linecap="round"/>
-  <path d="M31 80c18-20 49-31 72-23" fill="none" stroke="#7a6a58" stroke-width="6" stroke-linecap="round"/>
-  <path d="M28 52c24 26 54 34 76 22" fill="none" stroke="#125c63" stroke-width="6" stroke-linecap="round"/>
-  <circle cx="31" cy="80" r="6" fill="#7a6a58"/>
-  <circle cx="103" cy="57" r="6" fill="#7a6a58"/>
-  <circle cx="28" cy="52" r="6" fill="#125c63"/>
-  <circle cx="104" cy="74" r="6" fill="#125c63"/>
+  <path d="M31 80c18-20 49-31 72-23" fill="none" stroke="#64748b" stroke-width="6" stroke-linecap="round"/>
+  <path d="M28 52c24 26 54 34 76 22" fill="none" stroke="#2f6690" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="31" cy="80" r="6" fill="#64748b"/>
+  <circle cx="103" cy="57" r="6" fill="#64748b"/>
+  <circle cx="28" cy="52" r="6" fill="#2f6690"/>
+  <circle cx="104" cy="74" r="6" fill="#2f6690"/>
 </svg>
