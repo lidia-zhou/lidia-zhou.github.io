@@ -746,6 +746,128 @@
         outline-offset: 3px;
       }
     </style>
+    <style id="pastel-gradient-final">
+      :root {
+        --accent-indigo: #5261f6 !important;
+        --accent-periwinkle: #7583f3 !important;
+        --accent-lavender: #99adf0 !important;
+        --accent-sky: #bed4f4 !important;
+        --accent-mint: #e3fbfa !important;
+      }
+
+      html .keyword-strip span {
+        border: 1px solid #d8e1f5 !important;
+        background: linear-gradient(135deg, rgba(227, 251, 250, 0.92) 0%, rgba(190, 212, 244, 0.5) 55%, #ffffff 100%) !important;
+        color: #172033 !important;
+        box-shadow: none !important;
+      }
+
+      html .keyword-strip span::after {
+        width: 7px;
+        background: linear-gradient(180deg, #5261f6 0%, #99adf0 58%, #e3fbfa 100%);
+      }
+
+      html .brief-news li span,
+      html .news-list time,
+      html .brief-news li:nth-child(n) span,
+      html .news-list li:nth-child(n) time {
+        border: 0 !important;
+        background: linear-gradient(135deg, #5261f6 0%, #7583f3 38%, #99adf0 100%) !important;
+        color: #ffffff !important;
+        box-shadow: 5px 5px 0 rgba(153, 173, 240, 0.22) !important;
+      }
+
+      html .brief-news li:nth-child(2) span,
+      html .news-list li:nth-child(2) time {
+        background: linear-gradient(135deg, #6675f2 0%, #99adf0 52%, #bed4f4 100%) !important;
+      }
+
+      html .brief-news li:nth-child(3) span,
+      html .news-list li:nth-child(3) time {
+        background: linear-gradient(135deg, #7d8df0 0%, #bed4f4 100%) !important;
+        color: #172033 !important;
+      }
+
+      html .brief-news li:nth-child(4) span,
+      html .news-list li:nth-child(4) time,
+      html .brief-news li:nth-child(5) span,
+      html .news-list li:nth-child(5) time {
+        background: linear-gradient(135deg, #bed4f4 0%, #e3fbfa 100%) !important;
+        color: #172033 !important;
+      }
+
+      html .filter-button,
+      html .publication-card .tag {
+        border-radius: 3px !important;
+        box-shadow: none !important;
+      }
+
+      html .filter-button[data-filter="all"],
+      html .filter-button.active[data-filter="all"] {
+        background: linear-gradient(135deg, #111827 0%, #334155 100%) !important;
+        border-color: #111827 !important;
+        color: #ffffff !important;
+      }
+
+      html .filter-button[data-filter="preprint"],
+      html .publication-card .tag.preprint {
+        background: linear-gradient(135deg, #f8fbff 0%, #bed4f4 100%) !important;
+        border-color: #a9bee9 !important;
+        color: #25314d !important;
+      }
+
+      html .filter-button[data-filter="journal"],
+      html .publication-card .tag.journal {
+        background: linear-gradient(135deg, #e3fbfa 0%, #bed4f4 52%, #99adf0 100%) !important;
+        border-color: #99adf0 !important;
+        color: #182b5c !important;
+      }
+
+      html .filter-button[data-filter="chapter"],
+      html .publication-card .tag.chapter {
+        background: linear-gradient(135deg, #f7fbff 0%, #dbe7fb 45%, #bed4f4 100%) !important;
+        border-color: #b7c8ed !important;
+        color: #34415f !important;
+      }
+
+      html .filter-button[data-filter="proceeding"],
+      html .publication-card .tag.proceeding {
+        background: linear-gradient(135deg, #5261f6 0%, #7583f3 48%, #99adf0 100%) !important;
+        border-color: #5261f6 !important;
+        color: #ffffff !important;
+      }
+
+      html .filter-button[data-filter="conference"],
+      html .publication-card .tag.conference {
+        background: linear-gradient(135deg, #eef3ff 0%, #99adf0 100%) !important;
+        border-color: #879dec !important;
+        color: #1f2d5f !important;
+      }
+
+      html .filter-button[data-filter="review"],
+      html .publication-card .tag.review {
+        background: linear-gradient(135deg, #ffffff 0%, #e3fbfa 48%, #d6eaf8 100%) !important;
+        border-color: #c3dff0 !important;
+        color: #31475c !important;
+      }
+
+      html .publication-card .tag {
+        box-shadow: inset 4px 0 0 rgba(82, 97, 246, 0.42) !important;
+      }
+
+      html .filter-button.active:not([data-filter="all"]) {
+        outline: 2px solid rgba(82, 97, 246, 0.7) !important;
+        outline-offset: 3px;
+      }
+
+      html .button.primary,
+      html .filter-button:hover,
+      html .link-grid a:hover {
+        background: linear-gradient(135deg, #111827 0%, #334155 100%) !important;
+        border-color: #111827 !important;
+        color: #ffffff !important;
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
