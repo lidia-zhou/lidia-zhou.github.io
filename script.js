@@ -44,7 +44,7 @@ const renderContent = () => {
   }
 
   const role = document.querySelector('.profile-panel .role');
-  if (role) role.textContent = content.profile.role;
+  if (role) role.textContent = content.profile.role.replaceAll(' / ', '\n');
 
   const facts = document.querySelector('.quick-facts');
   if (facts) {

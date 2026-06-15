@@ -3,7 +3,8 @@ window.SITE_CONTENT = {
     brand: "Lidia Zhou Mengyuan",
     role: "AI and Culture / Digital Humanities / Translation Studies",
     affiliation: "Department of Translation, The Chinese University of Hong Kong",
-    email: "lidiazhou[at]cuhk.edu.hk",
+    office: "Room 110, Leung Kau Kui Building",
+    email: "lidiazhou@cuhk.edu.hk",
     orcid: "0000-0002-7054-8800"
   },
 
@@ -11,7 +12,7 @@ window.SITE_CONTENT = {
     kicker: "Assistant Professor / AI Humanities Researcher",
     title: "AI, culture, and the digital life of literature.",
     paragraphs: [
-      "My research examines both AI in culture and culture in AI. I study how artificial intelligence reshapes creativity, cultural understanding, literary value, and cross-cultural communication, while also using AI and computational methods to investigate literature, language, and translation.",
+      "I am an incoming tenure-track assistant professor (August 2026) in the Department of Translation at The Chinese University of Hong Kong. My research examines both AI in culture and culture in AI. I study how artificial intelligence reshapes creativity, cultural understanding, literary value, and cross-cultural communication, while also using AI and computational methods to investigate literature, language, and translation.",
       "I approach AI in three connected ways: as method, object, and pedagogy. As method, I use natural language processing, machine learning, corpus analysis, topic modelling, sentiment analysis, and network analysis to study literary and cultural materials across languages. As object, I examine how large language models and algorithmic systems classify, frame, recommend, and sometimes distort cultural knowledge, especially in multilingual and cross-cultural contexts. As pedagogy, I integrate AI into humanities teaching, helping students develop both technical skills and critical awareness.",
       "Across these areas, my work contributes to AI humanities and responsible AI by bringing questions of translation, cultural mediation, literary circulation, ethics, and global inequality into the study of intelligent technologies. Rather than treating AI only as a tool, I understand it as a cultural system that shapes what can be seen, valued, and understood."
     ],
@@ -24,7 +25,7 @@ window.SITE_CONTENT = {
     interests: [
       "AI and cultural analytics",
       "Digital humanities and bibliographic metadata",
-      "Translation circulation"
+      "Translation, circulation, and literary prestige"
     ],
     news: [
       {
@@ -41,7 +42,7 @@ window.SITE_CONTENT = {
       },
       {
         date: "Jun 2026",
-        text: "Will present at the NYU Shanghai-NYU Madrid conference Whose East, Whose East in Madrid.",
+        text: "Will present at the NYU Shanghai-NYU Madrid conference in Madrid.",
         href: "https://wp.nyu.edu/nyushanghai-madrid/",
         linkText: "NYU Shanghai-NYU Madrid"
       },
