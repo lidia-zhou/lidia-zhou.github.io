@@ -663,6 +663,89 @@
         color: #ffffff !important;
       }
     </style>
+    <style id="gradient-category-final">
+      html .keyword-strip span {
+        position: relative;
+        overflow: hidden;
+        padding-left: 18px !important;
+        background: linear-gradient(90deg, #f0f6fb 0%, #ffffff 58%) !important;
+        border-color: #d8dee6 !important;
+        box-shadow: none !important;
+      }
+
+      html .keyword-strip span::after {
+        content: "";
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 6px;
+        background: linear-gradient(180deg, #2f6690 0%, #86a8c7 100%);
+      }
+
+      html .brief-news li span,
+      html .news-list time,
+      html .brief-news li:nth-child(n) span,
+      html .news-list li:nth-child(n) time {
+        border: 0 !important;
+        background: linear-gradient(135deg, #1f4f78 0%, #3e8bb3 100%) !important;
+        color: #ffffff !important;
+        box-shadow: 4px 4px 0 rgba(47, 102, 144, 0.14) !important;
+      }
+
+      html .filter-button[data-filter="preprint"] {
+        background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%) !important;
+        border-color: #cbd5e1 !important;
+        color: #334155 !important;
+        box-shadow: inset 4px 0 0 #94a3b8 !important;
+      }
+
+      html .filter-button[data-filter="journal"] {
+        background: linear-gradient(135deg, #eef6fb 0%, #d5e8f2 100%) !important;
+        border-color: #b8d3e2 !important;
+        color: #1e4d69 !important;
+        box-shadow: inset 4px 0 0 #2f6690 !important;
+      }
+
+      html .filter-button[data-filter="chapter"] {
+        background: linear-gradient(135deg, #faf7f2 0%, #eadfd4 100%) !important;
+        border-color: #ded0c2 !important;
+        color: #66523f !important;
+        box-shadow: inset 4px 0 0 #9a7b5d !important;
+      }
+
+      html .filter-button[data-filter="proceeding"] {
+        background: linear-gradient(135deg, #111827 0%, #334155 100%) !important;
+        border-color: #111827 !important;
+        color: #ffffff !important;
+        box-shadow: inset 4px 0 0 #86a8c7 !important;
+      }
+
+      html .filter-button[data-filter="conference"] {
+        background: linear-gradient(135deg, #f3f6fa 0%, #d8dee8 100%) !important;
+        border-color: #cbd5e1 !important;
+        color: #2f3c4d !important;
+        box-shadow: inset 4px 0 0 #64748b !important;
+      }
+
+      html .filter-button[data-filter="review"] {
+        background: linear-gradient(135deg, #fbf8f4 0%, #e5d9ce 100%) !important;
+        border-color: #ded4c9 !important;
+        color: #5b5047 !important;
+        box-shadow: inset 4px 0 0 #a39182 !important;
+      }
+
+      html .filter-button[data-filter="all"],
+      html .filter-button.active[data-filter="all"] {
+        background: #111827 !important;
+        border-color: #111827 !important;
+        color: #ffffff !important;
+        box-shadow: none !important;
+      }
+
+      html .filter-button.active:not([data-filter="all"]) {
+        outline: 2px solid #111827;
+        outline-offset: 3px;
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -752,8 +835,7 @@ Translation Studies</p>
 
             <div class="quick-facts">
               <p><span>Affiliation</span> Department of Translation, The Chinese University of Hong Kong</p>
-              <p><span>Office</span> Room 110, Leung Kau Kui Building</p>
-              <p><span>Email</span> lidiazhou@cuhk.edu.hk</p>
+              <p><span>Email</span> lidiazhou[at]cuhk.du.hk</p>
               <p><span>ORCID</span> 0000-0002-7054-8800</p>
             </div>
 
@@ -1080,7 +1162,7 @@ Translation Studies</p>
             <p class="section-kicker">Contact</p>
             <h2>For collaboration, talks, or student research enquiries, please get in touch.</h2>
           </div>
-          <a class="button primary" href="mailto:lidiazhou@cuhk.edu.hk">lidiazhou@cuhk.edu.hk</a>
+          <a class="button primary" href="mailto:lidiazhou@cuhk.edu.hk">lidiazhou[at]cuhk.du.hk</a>
         </section>
       </section>
     </main>

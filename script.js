@@ -50,8 +50,7 @@ const renderContent = () => {
   if (facts) {
     facts.innerHTML = `
       <p><span>Affiliation</span> ${escapeHtml(content.profile.affiliation)}</p>
-      <p><span>Office</span> ${escapeHtml(content.profile.office)}</p>
-      <p><span>Email</span> ${escapeHtml(content.profile.email)}</p>
+      <p><span>Email</span> ${escapeHtml(content.profile.emailDisplay || content.profile.email)}</p>
       <p><span>ORCID</span> ${escapeHtml(content.profile.orcid)}</p>
     `;
   }
@@ -196,7 +195,7 @@ const renderContent = () => {
   if (contactHeading) contactHeading.textContent = content.contact.heading;
   const contactButton = document.querySelector('#contact .button');
   if (contactButton) {
-    contactButton.textContent = content.contact.email;
+    contactButton.textContent = content.contact.emailDisplay || content.contact.email;
     contactButton.href = `mailto:${content.contact.email}`;
   }
 };

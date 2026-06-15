@@ -1,9 +1,10 @@
 window.SITE_CONTENT = {
   profile: {
     brand: "Lidia Zhou Mengyuan",
-    role: "AI Humanities / Translation Studies",
+    role: "AI and Culture / Digital Humanities / Translation Studies",
     affiliation: "Department of Translation, The Chinese University of Hong Kong",
-    email: "lidiazhou[at]cuhk.edu.hk",
+    email: "lidiazhou@cuhk.edu.hk",
+    emailDisplay: "lidiazhou[at]cuhk.du.hk",
     orcid: "0000-0002-7054-8800"
   },
 
@@ -270,6 +271,7 @@ window.SITE_CONTENT = {
 
   contact: {
     heading: "For collaboration, talks, or student research enquiries, please get in touch.",
-    email: "lidiazhou@cuhk.edu.hk"
+    email: "lidiazhou@cuhk.edu.hk",
+    emailDisplay: "lidiazhou[at]cuhk.du.hk"
   }
 };
