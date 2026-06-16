@@ -277,6 +277,7 @@ const showView = (targetId = '#about') => {
   if (!target) return;
 
   views.forEach((view) => view.classList.toggle('is-active-view', view === target));
+  document.body.classList.toggle('view-about', target.id === 'about');
   document.querySelectorAll('.site-nav a').forEach((link) => {
     link.toggleAttribute('aria-current', link.getAttribute('href') === `#${target.id}`);
   });
