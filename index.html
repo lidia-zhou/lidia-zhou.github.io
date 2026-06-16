@@ -2448,6 +2448,119 @@
         text-align-last: left !important;
       }
     </style>
+    <style id="restore-top-whitespace-final">
+      html body.view-about,
+      html body.view-about .page-shell,
+      html body.view-about .site-header {
+        background: #ffffff !important;
+      }
+
+      html body.view-about .site-header {
+        margin-top: 0 !important;
+        border-bottom: 0 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view {
+        width: min(820px, 100%) !important;
+        margin: 22px auto 0 !important;
+        padding: 42px 46px 36px !important;
+        grid-template-columns: 170px minmax(0, 1fr) !important;
+        column-gap: 36px !important;
+        row-gap: 24px !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        background:
+          radial-gradient(circle at 12% 0%, rgba(255, 218, 174, 0.68) 0 20%, rgba(255, 218, 174, 0) 46%),
+          radial-gradient(circle at 86% 0%, rgba(190, 222, 211, 0.72) 0 22%, rgba(190, 222, 211, 0) 48%),
+          linear-gradient(180deg, #fff1df 0%, #fff8ee 44%, #ffffff 100%) !important;
+        box-shadow: none !important;
+        overflow: visible !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view::before,
+      html body.view-about #about.hero-section.is-active-view::after {
+        display: none !important;
+        content: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .profile-panel {
+        max-width: 170px !important;
+        padding: 0 18px 0 0 !important;
+        border-right: 1px solid rgba(17, 17, 17, 0.14) !important;
+        background: transparent !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .portrait-wrap {
+        width: 100px !important;
+        max-width: 100px !important;
+        margin: 0 auto 18px !important;
+        border: 4px solid rgba(255, 255, 255, 0.78) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .quick-facts {
+        font-size: 0.66rem !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .link-grid a {
+        min-height: 26px !important;
+        padding: 4px 7px !important;
+        font-size: 0.66rem !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .intro-copy {
+        max-width: 570px !important;
+        padding-top: 4px !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .intro-copy h1 {
+        max-width: 560px !important;
+        font-size: clamp(2.05rem, 4.5vw, 3.2rem) !important;
+        line-height: 0.96 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .intro-copy .lead {
+        max-width: 560px !important;
+        font-size: 0.73rem !important;
+        line-height: 1.52 !important;
+        text-align: left !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .keyword-strip span {
+        background: rgba(255, 255, 255, 0.72) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .home-news-panel {
+        margin-top: 20px !important;
+        padding-top: 18px !important;
+        border-top: 1px solid rgba(17, 17, 17, 0.13) !important;
+      }
+
+      @media (max-width: 900px) {
+        html body.view-about #about.hero-section.is-active-view {
+          width: 100% !important;
+          grid-template-columns: 1fr !important;
+          padding: 32px 22px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .profile-panel {
+          max-width: none !important;
+          padding-right: 0 !important;
+          border-right: 0 !important;
+        }
+      }
+    </style>
+    <style id="peach-mint-gradient-color-final">
+      html body.view-about .site-header {
+        background: #ffffff !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view {
+        background:
+          radial-gradient(circle at 10% 0%, rgba(255, 219, 176, 0.92) 0 22%, rgba(255, 219, 176, 0) 52%),
+          radial-gradient(circle at 88% 0%, rgba(194, 224, 213, 0.9) 0 24%, rgba(194, 224, 213, 0) 54%),
+          linear-gradient(90deg, #ffe2ba 0%, #fff3e7 42%, #c7e3d8 100%) !important;
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
