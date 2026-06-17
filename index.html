@@ -2561,6 +2561,289 @@
           linear-gradient(90deg, #ffe2ba 0%, #fff3e7 42%, #c7e3d8 100%) !important;
       }
     </style>
+    <style id="clean-about-layout-final">
+      html body.view-about,
+      html body.view-about .page-shell,
+      html body.view-about .site-header {
+        background: #ffffff !important;
+      }
+
+      html body.view-about .site-header {
+        width: min(1180px, calc(100% - 64px)) !important;
+        margin: 0 auto !important;
+        padding: 26px 0 18px !important;
+        border-bottom: 0 !important;
+      }
+
+      html body.view-about .page-shell {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 0 72px !important;
+      }
+
+      html body.view-about .content {
+        width: 100% !important;
+        max-width: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view {
+        position: relative !important;
+        width: min(1120px, calc(100% - 80px)) !important;
+        margin: 54px auto 0 !important;
+        padding: 54px 56px 0 !important;
+        display: grid !important;
+        grid-template-columns: 250px minmax(0, 1fr) !important;
+        grid-template-areas:
+          "profile copy"
+          "news news" !important;
+        column-gap: 54px !important;
+        row-gap: 0 !important;
+        border: 0 !important;
+        background: transparent !important;
+        overflow: visible !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view::before {
+        display: block !important;
+        content: "" !important;
+        position: absolute !important;
+        inset: 0 0 auto 0 !important;
+        height: 560px !important;
+        background:
+          radial-gradient(circle at 12% 0%, rgba(255, 219, 176, 0.92) 0 24%, rgba(255, 219, 176, 0) 54%),
+          radial-gradient(circle at 88% 0%, rgba(194, 224, 213, 0.92) 0 26%, rgba(194, 224, 213, 0) 56%),
+          linear-gradient(90deg, #ffe2ba 0%, #fff3e7 42%, #c7e3d8 100%) !important;
+        z-index: 0 !important;
+        pointer-events: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view::after {
+        display: none !important;
+        content: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .profile-panel,
+      html body.view-about #about.hero-section.is-active-view .hero-copy {
+        position: relative !important;
+        z-index: 1 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .profile-panel {
+        grid-area: profile !important;
+        max-width: 250px !important;
+        padding: 0 30px 0 0 !important;
+        border-right: 1px solid rgba(17, 17, 17, 0.18) !important;
+        background: transparent !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .portrait-wrap {
+        width: 142px !important;
+        max-width: 142px !important;
+        margin: 0 auto 24px !important;
+        border: 5px solid rgba(255, 255, 255, 0.86) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .quick-facts {
+        font-size: 0.78rem !important;
+        line-height: 1.55 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .link-grid a {
+        min-height: 34px !important;
+        padding: 8px 12px !important;
+        font-size: 0.76rem !important;
+        background: rgba(255, 255, 255, 0.7) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .hero-copy {
+        grid-area: copy !important;
+        max-width: 720px !important;
+        padding-top: 4px !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .hero-copy h2 {
+        max-width: 690px !important;
+        font-size: clamp(2.55rem, 4.8vw, 4.15rem) !important;
+        line-height: 0.96 !important;
+        margin-bottom: 30px !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .hero-copy .lead {
+        max-width: 690px !important;
+        font-size: 1rem !important;
+        line-height: 1.64 !important;
+        text-align: left !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .inline-interest-label {
+        margin-top: 28px !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .keyword-strip span {
+        background: rgba(255, 255, 255, 0.7) !important;
+        border-color: rgba(17, 17, 17, 0.22) !important;
+        color: #111111 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .home-news-panel {
+        grid-area: news !important;
+        position: relative !important;
+        z-index: 2 !important;
+        width: 100% !important;
+        margin: 74px 0 0 !important;
+        padding: 30px 0 0 !important;
+        background: #ffffff !important;
+        border-top: 1px solid #dddddd !important;
+        color: #111111 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news::before {
+        left: 126px !important;
+        background: #d9d9d9 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news li,
+      html body.view-about #about.hero-section.is-active-view .brief-news li:nth-child(n + 6) {
+        display: grid !important;
+        grid-template-columns: 104px minmax(0, 1fr) !important;
+        gap: 44px !important;
+        padding: 11px 0 18px !important;
+        border-bottom: 1px solid #ececec !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news li::after {
+        left: 120px !important;
+        background: #111111 !important;
+        box-shadow: 0 0 0 3px #ffffff, 0 0 0 4px #d9d9d9 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news li span {
+        justify-self: start !important;
+        background: #ffffff !important;
+        border: 1px solid #d2d2d2 !important;
+        color: #111111 !important;
+        box-shadow: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news p {
+        font-size: 0.98rem !important;
+        line-height: 1.55 !important;
+        color: #111111 !important;
+      }
+
+      @media (max-width: 900px) {
+        html body.view-about .site-header,
+        html body.view-about #about.hero-section.is-active-view {
+          width: min(100% - 32px, 720px) !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view {
+          grid-template-columns: 1fr !important;
+          grid-template-areas:
+            "profile"
+            "copy"
+            "news" !important;
+          padding: 32px 24px 0 !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view::before {
+          height: 760px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .profile-panel {
+          max-width: none !important;
+          padding-right: 0 !important;
+          border-right: 0 !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .hero-copy h2 {
+          font-size: 2.35rem !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .brief-news li {
+          grid-template-columns: 1fr !important;
+          gap: 6px !important;
+          padding-left: 22px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .brief-news::before {
+          left: 7px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .brief-news li::after {
+          left: 1px !important;
+        }
+      }
+    </style>
+    <style id="soft-fade-about-background-final">
+      html body.view-about #about.hero-section.is-active-view {
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 52%, rgba(255, 255, 255, 0.72) 76%, #ffffff 100%),
+          radial-gradient(circle at 12% 0%, rgba(255, 219, 176, 0.92) 0 22%, rgba(255, 219, 176, 0) 56%),
+          radial-gradient(circle at 88% 0%, rgba(194, 224, 213, 0.9) 0 24%, rgba(194, 224, 213, 0) 58%),
+          linear-gradient(90deg, #ffe2ba 0%, #fff3e7 42%, #c7e3d8 100%) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view::before {
+        display: none !important;
+        content: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .home-news-panel {
+        background: transparent !important;
+      }
+    </style>
+    <style id="unified-top-gradient-final">
+      html body.view-about {
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 56%, rgba(255, 255, 255, 0.72) 78%, #ffffff 100%),
+          radial-gradient(circle at 18% 0%, rgba(255, 219, 176, 0.82) 0 20%, rgba(255, 219, 176, 0) 54%),
+          radial-gradient(circle at 86% 0%, rgba(194, 224, 213, 0.86) 0 22%, rgba(194, 224, 213, 0) 56%),
+          linear-gradient(90deg, #ffe2ba 0%, #fff3e7 44%, #c7e3d8 100%) !important;
+        background-attachment: scroll !important;
+      }
+
+      html body.view-about .site-header,
+      html body.view-about .page-shell,
+      html body.view-about .content {
+        background: transparent !important;
+      }
+
+      html body.view-about .site-header {
+        border-bottom: 0 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view {
+        background: transparent !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .home-news-panel {
+        background:
+          linear-gradient(180deg, rgba(255, 255, 255, 0.58) 0%, rgba(255, 255, 255, 0.88) 26%, #ffffff 100%) !important;
+      }
+    </style>
+    <style id="transparent-news-on-gradient-final">
+      html body.view-about #about.hero-section.is-active-view .home-news-panel {
+        background: transparent !important;
+        border-top-color: rgba(17, 17, 17, 0.16) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news li,
+      html body.view-about #about.hero-section.is-active-view .brief-news li:nth-child(n + 6) {
+        background: transparent !important;
+        border-bottom-color: rgba(17, 17, 17, 0.12) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news li span {
+        background: rgba(255, 255, 255, 0.58) !important;
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
