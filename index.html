@@ -28,7 +28,7 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="icon" type="image/svg+xml" href="assets/lz-monogram.svg?v=6">
     <link rel="apple-touch-icon" href="favicon.png">
-    <link rel="stylesheet" href="styles.css?v=20260615-blue">
+    <link rel="stylesheet" href="styles.css?v=20260618-mobile-pdf">
     <style id="final-control-palette">
       html body {
         background: #ffffff !important;
@@ -3074,6 +3074,234 @@
         }
       }
     </style>
+    <style id="mobile-overlap-fix-20260618">
+      @media (max-width: 760px) {
+        html,
+        body {
+          overflow-x: hidden !important;
+        }
+
+        html .site-header {
+          position: sticky !important;
+          top: 0 !important;
+          z-index: 50 !important;
+          width: 100% !important;
+          max-width: none !important;
+          box-sizing: border-box !important;
+          padding: calc(10px + env(safe-area-inset-top, 0px)) 14px 10px !important;
+          gap: 8px !important;
+          background: rgba(255, 255, 255, 0.92) !important;
+          backdrop-filter: blur(14px) !important;
+        }
+
+        html .brand {
+          width: 100% !important;
+          min-width: 0 !important;
+          font-size: 0.9rem !important;
+        }
+
+        html .brand span:last-child {
+          min-width: 0 !important;
+          overflow: hidden !important;
+          text-overflow: ellipsis !important;
+          white-space: nowrap !important;
+        }
+
+        html .site-nav {
+          width: 100% !important;
+          display: flex !important;
+          flex-wrap: nowrap !important;
+          justify-content: flex-start !important;
+          gap: 16px !important;
+          overflow-x: auto !important;
+          padding: 2px 0 6px !important;
+          font-size: 0.82rem !important;
+          scrollbar-width: none !important;
+          -webkit-overflow-scrolling: touch !important;
+        }
+
+        html .site-nav::-webkit-scrollbar {
+          display: none !important;
+        }
+
+        html .site-nav a {
+          flex: 0 0 auto !important;
+          white-space: nowrap !important;
+        }
+
+        html .page-shell,
+        html .content {
+          width: 100% !important;
+          max-width: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        html body.view-about #about.hero-section,
+        html body.view-about #about.hero-section.is-active-view,
+        html #about.hero-section.is-active-view {
+          width: 100% !important;
+          max-width: none !important;
+          min-height: auto !important;
+          margin: 0 !important;
+          padding: 22px 18px 44px !important;
+          box-sizing: border-box !important;
+          display: grid !important;
+          grid-template-columns: minmax(0, 1fr) !important;
+          grid-template-areas:
+            "profile"
+            "copy"
+            "news" !important;
+          gap: 26px !important;
+          align-items: start !important;
+          overflow: visible !important;
+        }
+
+        html body.view-about #about.hero-section .profile-panel,
+        html body.view-about #about.hero-section.is-active-view .profile-panel,
+        html #about.hero-section.is-active-view .profile-panel {
+          position: static !important;
+          grid-area: profile !important;
+          width: 100% !important;
+          max-width: 360px !important;
+          margin: 0 auto !important;
+          padding: 0 !important;
+          float: none !important;
+          clear: both !important;
+          border: 0 !important;
+          text-align: left !important;
+          transform: none !important;
+        }
+
+        html #about.hero-section.is-active-view .portrait-wrap {
+          position: relative !important;
+          width: 124px !important;
+          max-width: 124px !important;
+          margin: 0 auto 18px !important;
+          transform: none !important;
+        }
+
+        html #about.hero-section.is-active-view .quick-facts,
+        html #about.hero-section.is-active-view .link-grid {
+          position: static !important;
+          width: 100% !important;
+          max-width: 360px !important;
+          transform: none !important;
+        }
+
+        html #about.hero-section.is-active-view .quick-facts {
+          margin: 0 auto !important;
+          padding-top: 18px !important;
+          font-size: 0.82rem !important;
+        }
+
+        html #about.hero-section.is-active-view .link-grid {
+          display: grid !important;
+          grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+          gap: 8px !important;
+          margin: 16px auto 0 !important;
+        }
+
+        html #about.hero-section.is-active-view .link-grid a {
+          min-width: 0 !important;
+          min-height: 38px !important;
+          padding: 8px 10px !important;
+          overflow: hidden !important;
+          text-overflow: ellipsis !important;
+          white-space: nowrap !important;
+        }
+
+        html body.view-about #about.hero-section .hero-copy,
+        html body.view-about #about.hero-section.is-active-view .hero-copy,
+        html #about.hero-section.is-active-view .hero-copy {
+          position: static !important;
+          grid-area: copy !important;
+          width: 100% !important;
+          max-width: none !important;
+          margin: 0 !important;
+          padding: 0 !important;
+          transform: none !important;
+        }
+
+        html #about.hero-section.is-active-view .hero-copy h2 {
+          max-width: 100% !important;
+          margin: 0 0 18px !important;
+          font-size: clamp(2.35rem, 15vw, 3.45rem) !important;
+          line-height: 1.03 !important;
+          word-break: normal !important;
+          overflow-wrap: anywhere !important;
+        }
+
+        html #about.hero-section.is-active-view .lead {
+          max-width: 100% !important;
+          font-size: 0.96rem !important;
+          line-height: 1.58 !important;
+        }
+
+        html #about.hero-section.is-active-view .hero-actions {
+          display: grid !important;
+          grid-template-columns: 1fr 1fr !important;
+          gap: 10px !important;
+          align-items: stretch !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .hero-actions {
+          display: grid !important;
+          grid-template-columns: 1fr 1fr !important;
+          gap: 10px !important;
+          align-items: stretch !important;
+        }
+
+        html #about.hero-section.is-active-view .hero-actions .button {
+          display: inline-flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          min-width: 0 !important;
+          min-height: 42px !important;
+          height: auto !important;
+          aspect-ratio: auto !important;
+          width: 100% !important;
+          padding: 10px 12px !important;
+          text-align: center !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .hero-actions .button {
+          display: inline-flex !important;
+          align-items: center !important;
+          justify-content: center !important;
+          flex: 0 1 auto !important;
+          min-width: 0 !important;
+          min-height: 42px !important;
+          height: auto !important;
+          aspect-ratio: auto !important;
+          width: 100% !important;
+          padding: 10px 12px !important;
+          text-align: center !important;
+        }
+
+        html #about.hero-section.is-active-view .home-news-panel {
+          position: static !important;
+          grid-area: news !important;
+          width: 100% !important;
+          margin: 0 !important;
+          padding-top: 18px !important;
+          transform: none !important;
+        }
+
+        html .section-block.is-active-view {
+          width: 100% !important;
+          max-width: none !important;
+          min-height: auto !important;
+          box-sizing: border-box !important;
+          padding: 34px 18px 54px !important;
+        }
+
+        html .publication-card {
+          grid-template-columns: 1fr !important;
+          gap: 10px !important;
+        }
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -3394,6 +3622,7 @@
               <div>
                 <h3>What Makes AI a Good Cultural Mediator? Evidence from Literary Paratexts</h3>
                 <p><strong>Zhou, M.</strong> (2026). In <em>Culture x AI: Evaluating AI as a Cultural Technology</em>, ICML 2026, Seoul.</p>
+                <div class="pub-links"><a href="assets/papers/what-makes-ai-a-good-cultural-mediator.pdf">PDF</a></div>
               </div>
             </article>
 
