@@ -2844,6 +2844,236 @@
         background: rgba(255, 255, 255, 0.58) !important;
       }
     </style>
+    <style id="mobile-portrait-layout-final">
+      @media (max-width: 760px) {
+        html,
+        body {
+          width: 100% !important;
+          max-width: 100% !important;
+          overflow-x: hidden !important;
+        }
+
+        html body.view-about {
+          background:
+            linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.16) 48%, rgba(255, 255, 255, 0.78) 76%, #ffffff 100%),
+            radial-gradient(circle at 4% 0%, rgba(255, 219, 176, 0.82) 0 28%, rgba(255, 219, 176, 0) 66%),
+            radial-gradient(circle at 98% 0%, rgba(194, 224, 213, 0.86) 0 30%, rgba(194, 224, 213, 0) 68%),
+            linear-gradient(120deg, #ffe2ba 0%, #fff3e7 45%, #c7e3d8 100%) !important;
+          background-attachment: scroll !important;
+        }
+
+        html body.view-about .site-header {
+          width: calc(100% - 28px) !important;
+          max-width: none !important;
+          margin: 0 auto !important;
+          padding: 16px 0 12px !important;
+          display: flex !important;
+          flex-direction: column !important;
+          align-items: flex-start !important;
+          gap: 12px !important;
+          position: static !important;
+          background: transparent !important;
+          border-bottom: 0 !important;
+        }
+
+        html body.view-about .brand {
+          max-width: 100% !important;
+          gap: 10px !important;
+          font-size: 0.95rem !important;
+          line-height: 1.2 !important;
+        }
+
+        html body.view-about .brand-mark {
+          width: 34px !important;
+          height: 34px !important;
+          flex: 0 0 34px !important;
+        }
+
+        html body.view-about .site-nav {
+          width: 100% !important;
+          display: flex !important;
+          flex-wrap: wrap !important;
+          justify-content: flex-start !important;
+          gap: 8px 12px !important;
+          font-size: 0.82rem !important;
+          line-height: 1.2 !important;
+        }
+
+        html body.view-about .site-nav a {
+          white-space: nowrap !important;
+        }
+
+        html body.view-about .page-shell,
+        html body.view-about .content {
+          width: 100% !important;
+          max-width: none !important;
+          margin: 0 !important;
+          padding: 0 0 42px !important;
+          background: transparent !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view {
+          width: calc(100% - 28px) !important;
+          max-width: none !important;
+          margin: 18px auto 0 !important;
+          padding: 24px 18px 0 !important;
+          box-sizing: border-box !important;
+          display: grid !important;
+          grid-template-columns: 1fr !important;
+          grid-template-areas: "profile" "copy" "news" !important;
+          gap: 22px !important;
+          background: transparent !important;
+          border: 0 !important;
+          box-shadow: none !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .profile-panel {
+          grid-area: profile !important;
+          max-width: none !important;
+          padding: 0 !important;
+          border-right: 0 !important;
+          text-align: center !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .portrait-wrap {
+          width: 124px !important;
+          max-width: 124px !important;
+          margin: 0 auto 16px !important;
+          border-width: 4px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .quick-facts {
+          max-width: 300px !important;
+          margin: 0 auto !important;
+          text-align: left !important;
+          font-size: 0.76rem !important;
+          line-height: 1.45 !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .quick-facts p {
+          margin-bottom: 10px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .link-grid {
+          max-width: 300px !important;
+          margin: 16px auto 0 !important;
+          grid-template-columns: 1fr 1fr !important;
+          gap: 8px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .link-grid a {
+          min-height: 32px !important;
+          padding: 7px 8px !important;
+          font-size: 0.74rem !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .hero-copy {
+          grid-area: copy !important;
+          max-width: none !important;
+          padding-top: 0 !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .section-kicker {
+          font-size: 0.72rem !important;
+          letter-spacing: 0.14em !important;
+          margin-bottom: 10px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .hero-copy h2 {
+          max-width: none !important;
+          font-size: clamp(2rem, 11vw, 2.75rem) !important;
+          line-height: 1.02 !important;
+          margin-bottom: 20px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .hero-copy .lead {
+          max-width: none !important;
+          font-size: 0.94rem !important;
+          line-height: 1.58 !important;
+          margin-bottom: 14px !important;
+          text-align: left !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .inline-interest-label {
+          margin-top: 20px !important;
+          font-size: 0.75rem !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .keyword-strip {
+          display: flex !important;
+          flex-wrap: wrap !important;
+          gap: 8px !important;
+          margin: 10px 0 18px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .keyword-strip span {
+          max-width: 100% !important;
+          padding: 7px 9px !important;
+          font-size: 0.76rem !important;
+          white-space: normal !important;
+          background: rgba(255, 255, 255, 0.64) !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .hero-actions {
+          display: flex !important;
+          flex-wrap: wrap !important;
+          gap: 10px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .hero-actions .button {
+          flex: 1 1 130px !important;
+          min-height: 38px !important;
+          padding: 9px 10px !important;
+          font-size: 0.82rem !important;
+          text-align: center !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .home-news-panel {
+          grid-area: news !important;
+          margin-top: 28px !important;
+          padding-top: 20px !important;
+          background: transparent !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .brief-label {
+          font-size: 0.78rem !important;
+          letter-spacing: 0.18em !important;
+          margin-bottom: 14px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .brief-news::before {
+          left: 7px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .brief-news li,
+        html body.view-about #about.hero-section.is-active-view .brief-news li:nth-child(n + 6) {
+          grid-template-columns: 1fr !important;
+          gap: 6px !important;
+          padding: 0 0 16px 24px !important;
+          border-bottom-color: rgba(17, 17, 17, 0.12) !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .brief-news li::after {
+          left: 1px !important;
+          top: 8px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .brief-news li span {
+          justify-self: start !important;
+          width: auto !important;
+          min-width: 0 !important;
+          padding: 5px 8px !important;
+          font-size: 0.76rem !important;
+          background: rgba(255, 255, 255, 0.62) !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .brief-news p {
+          font-size: 0.9rem !important;
+          line-height: 1.5 !important;
+          margin: 0 !important;
+        }
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
