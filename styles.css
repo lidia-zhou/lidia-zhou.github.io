@@ -3304,6 +3304,30 @@ body {
   font-size: 1.35rem;
 }
 
+.prospective-students {
+  max-width: 680px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--line);
+}
+
+.prospective-students h3 {
+  margin: 0 0 8px;
+  color: var(--ink);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 850;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.prospective-students p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.62;
+}
+
 .site-footer {
   width: min(820px, calc(100% - 48px));
   font-family: inherit;

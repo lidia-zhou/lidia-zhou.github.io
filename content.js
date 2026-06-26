@@ -272,6 +272,8 @@ window.SITE_CONTENT = {
 
   contact: {
     heading: "For collaboration, talks, or student research enquiries, please get in touch.",
+    prospectiveHeading: "Prospective students",
+    prospectiveNote: "I am not currently accepting PhD students. I welcome enquiries from prospective MPhil students, especially those with interests or backgrounds in computer science, computational linguistics, digital humanities, AI and culture, or related areas.",
     email: "lidiazhou@cuhk.edu.hk",
     emailDisplay: "lidiazhou[at]cuhk.du.hk"
   }

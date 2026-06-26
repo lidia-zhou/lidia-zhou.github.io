@@ -193,6 +193,10 @@ const renderContent = () => {
 
   const contactHeading = document.querySelector('#contact h2');
   if (contactHeading) contactHeading.textContent = content.contact.heading;
+  const prospectiveHeading = document.querySelector('#contact .prospective-students h3');
+  if (prospectiveHeading) prospectiveHeading.textContent = content.contact.prospectiveHeading;
+  const prospectiveNote = document.querySelector('#contact .prospective-students p');
+  if (prospectiveNote) prospectiveNote.textContent = content.contact.prospectiveNote;
   const contactButton = document.querySelector('#contact .button');
   if (contactButton) {
     contactButton.textContent = content.contact.emailDisplay || content.contact.email;
