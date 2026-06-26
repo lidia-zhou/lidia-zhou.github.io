@@ -4,7 +4,7 @@ window.SITE_CONTENT = {
     role: "AI and Culture / Digital Humanities / Translation Studies",
     affiliation: "Department of Translation, The Chinese University of Hong Kong",
     email: "lidiazhou@cuhk.edu.hk",
-    emailDisplay: "lidiazhou[at]cuhk.du.hk",
+    emailDisplay: "lidiazhou[at]cuhk.edu.hk",
     orcid: "0000-0002-7054-8800"
   },
 
@@ -275,6 +275,6 @@ window.SITE_CONTENT = {
     prospectiveHeading: "Prospective students",
     prospectiveNote: "I am not currently accepting PhD students. I welcome enquiries from prospective MPhil students, especially those with interests or backgrounds in computer science, computational linguistics, digital humanities, AI and culture, or related areas.",
     email: "lidiazhou@cuhk.edu.hk",
-    emailDisplay: "lidiazhou[at]cuhk.du.hk"
+    emailDisplay: "lidiazhou[at]cuhk.edu.hk"
   }
 };
