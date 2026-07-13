@@ -3302,6 +3302,1042 @@
         }
       }
     </style>
+    <style id="visual-hero-preview-experiment">
+      html body.view-about {
+        background: #fffaf4 !important;
+      }
+
+      html body.view-about .site-header {
+        width: min(1180px, calc(100% - 48px)) !important;
+        max-width: none !important;
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 40 !important;
+        background: rgba(255, 250, 244, 0.58) !important;
+        border-bottom: 0 !important;
+        backdrop-filter: blur(18px) saturate(130%) !important;
+      }
+
+      html body.view-about .page-shell {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view {
+        width: 100% !important;
+        max-width: none !important;
+        min-height: calc(100vh - 78px) !important;
+        margin: 0 !important;
+        padding: clamp(72px, 10vh, 118px) clamp(24px, 5vw, 72px) 72px !important;
+        grid-template-columns: minmax(0, 980px) !important;
+        grid-template-areas:
+          "copy"
+          "profile"
+          "news" !important;
+        justify-content: center !important;
+        align-items: start !important;
+        gap: clamp(24px, 4vw, 44px) !important;
+        overflow: hidden !important;
+        border: 0 !important;
+        background:
+          linear-gradient(180deg, rgba(255, 250, 244, 0.04) 0%, rgba(255, 250, 244, 0.16) 48%, rgba(255, 250, 244, 0.9) 84%, #ffffff 100%),
+          url("assets/hero-ai-humanities-landscape.png") center top / cover no-repeat !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view::before,
+      html body.view-about #about.hero-section.is-active-view::after {
+        display: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .hero-copy {
+        grid-area: copy !important;
+        align-self: start !important;
+        max-width: 780px !important;
+        margin: 0 auto !important;
+        padding-top: clamp(86px, 16vh, 156px) !important;
+        color: #171614 !important;
+        text-align: center !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .section-kicker {
+        color: rgba(30, 29, 25, 0.82) !important;
+        font-size: 0.78rem !important;
+        letter-spacing: 0.18em !important;
+        text-shadow: 0 1px 18px rgba(255, 255, 255, 0.86) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .hero-copy h2 {
+        max-width: 760px !important;
+        margin: 0 auto 18px !important;
+        font-family: Inter, "Segoe UI", Arial, sans-serif !important;
+        font-size: clamp(2.95rem, 6vw, 5.7rem) !important;
+        font-weight: 760 !important;
+        line-height: 0.96 !important;
+        letter-spacing: 0 !important;
+        text-shadow: 0 2px 30px rgba(255, 255, 255, 0.82) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .lead {
+        max-width: 680px !important;
+        margin: 0 auto 12px !important;
+        color: rgba(30, 29, 25, 0.82) !important;
+        font-size: 1rem !important;
+        line-height: 1.64 !important;
+        text-align: center !important;
+        text-shadow: 0 1px 18px rgba(255, 255, 255, 0.82) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .lead.compact {
+        display: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .inline-interest-label,
+      html body.view-about #about.hero-section.is-active-view .keyword-strip,
+      html body.view-about #about.hero-section.is-active-view .hero-actions {
+        justify-content: center !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .keyword-strip span {
+        border-color: rgba(255, 255, 255, 0.68) !important;
+        background: rgba(255, 255, 255, 0.56) !important;
+        color: #2f5968 !important;
+        backdrop-filter: blur(12px) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .profile-panel {
+        grid-area: profile !important;
+        width: min(980px, 100%) !important;
+        max-width: none !important;
+        margin: 0 auto !important;
+        display: grid !important;
+        grid-template-columns: 132px minmax(0, 1fr) minmax(220px, 280px) !important;
+        align-items: center !important;
+        gap: 24px !important;
+        padding: 18px 22px !important;
+        border: 1px solid rgba(255, 255, 255, 0.68) !important;
+        background: rgba(255, 255, 255, 0.56) !important;
+        box-shadow: 0 24px 70px rgba(68, 85, 80, 0.16) !important;
+        backdrop-filter: blur(18px) saturate(120%) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .portrait-wrap {
+        width: 132px !important;
+        margin: 0 !important;
+        border: 4px solid rgba(255, 255, 255, 0.86) !important;
+        box-shadow: 0 18px 45px rgba(73, 82, 76, 0.18) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .quick-facts {
+        display: grid !important;
+        grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+        gap: 14px !important;
+        padding-top: 0 !important;
+        border-top: 0 !important;
+        border-top-color: rgba(45, 55, 49, 0.16) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .quick-facts p {
+        font-size: 0.78rem !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .link-grid {
+        margin-top: 0 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .link-grid a {
+        border-color: rgba(255, 255, 255, 0.74) !important;
+        background: rgba(255, 255, 255, 0.68) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .home-news-panel {
+        grid-area: news !important;
+        width: min(980px, 100%) !important;
+        margin: clamp(20px, 4vh, 42px) auto 0 !important;
+        padding: 22px 0 0 !important;
+        border-top: 1px solid rgba(36, 31, 26, 0.12) !important;
+        background: transparent !important;
+      }
+
+      @media (max-width: 900px) {
+        html body.view-about #about.hero-section.is-active-view {
+          grid-template-columns: 1fr !important;
+          grid-template-areas:
+            "copy"
+            "profile"
+            "news" !important;
+          padding: 30px 18px 54px !important;
+          background-position: center top !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .hero-copy {
+          padding-top: 92px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .hero-copy h2 {
+          font-size: clamp(2.45rem, 11vw, 3.9rem) !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .lead {
+          font-size: 0.95rem !important;
+          line-height: 1.58 !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .profile-panel {
+          display: block !important;
+          max-width: 360px !important;
+          padding: 20px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .portrait-wrap {
+          margin: 0 auto 18px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .quick-facts {
+          grid-template-columns: 1fr !important;
+          padding-top: 18px !important;
+          border-top: 1px solid rgba(45, 55, 49, 0.16) !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .link-grid {
+          margin-top: 16px !important;
+        }
+      }
+    </style>
+    <style id="melanie-inspired-preview">
+      html body.view-about {
+        background: #fbfaf7 !important;
+        color: #1c1b18 !important;
+      }
+
+      html body.view-about .site-header {
+        width: min(1120px, calc(100% - 40px)) !important;
+        max-width: none !important;
+        margin: 0 auto !important;
+        position: sticky !important;
+        top: 0 !important;
+        z-index: 40 !important;
+        background: rgba(251, 250, 247, 0.92) !important;
+        border-bottom: 1px solid rgba(29, 28, 24, 0.12) !important;
+        box-shadow: none !important;
+        backdrop-filter: blur(14px) !important;
+      }
+
+      html body.view-about .page-shell {
+        width: 100% !important;
+        max-width: none !important;
+        margin: 0 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view {
+        width: min(1120px, calc(100% - 40px)) !important;
+        max-width: none !important;
+        min-height: auto !important;
+        margin: 0 auto !important;
+        padding: 26px 0 72px !important;
+        display: grid !important;
+        grid-template-columns: minmax(0, 820px) minmax(260px, 320px) !important;
+        grid-template-areas:
+          "visual visual"
+          "copy profile"
+          "news profile" !important;
+        align-items: start !important;
+        justify-content: center !important;
+        gap: 34px clamp(34px, 5vw, 64px) !important;
+        overflow: visible !important;
+        border: 0 !important;
+        background: transparent !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view::before {
+        content: "" !important;
+        display: block !important;
+        grid-area: visual !important;
+        position: static !important;
+        inset: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        height: clamp(250px, 34vw, 430px) !important;
+        margin: 0 0 10px !important;
+        border-radius: 0 !important;
+        background:
+          linear-gradient(180deg, rgba(251, 250, 247, 0) 55%, rgba(251, 250, 247, 0.1) 100%),
+          url("assets/hero-ai-humanities-landscape.png") center 44% / cover no-repeat !important;
+        box-shadow: none !important;
+        opacity: 1 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view::after {
+        content: none !important;
+        display: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .hero-copy {
+        grid-area: copy !important;
+        max-width: 820px !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        color: #1c1b18 !important;
+        text-align: left !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .section-kicker {
+        margin-bottom: 18px !important;
+        color: #6f675d !important;
+        font-size: 0.72rem !important;
+        letter-spacing: 0.16em !important;
+        text-shadow: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .hero-copy h2 {
+        max-width: 780px !important;
+        margin: 0 0 22px !important;
+        font-family: Georgia, "Times New Roman", serif !important;
+        font-size: clamp(2.45rem, 4.4vw, 4.1rem) !important;
+        font-weight: 700 !important;
+        line-height: 1.02 !important;
+        letter-spacing: 0 !important;
+        color: #171614 !important;
+        text-align: left !important;
+        text-shadow: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .lead {
+        max-width: 760px !important;
+        margin: 0 0 14px !important;
+        color: #4c4740 !important;
+        font-size: 1.02rem !important;
+        line-height: 1.72 !important;
+        text-align: left !important;
+        text-shadow: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .lead.compact {
+        display: block !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .lead.compact + .lead.compact {
+        display: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .inline-interest-label,
+      html body.view-about #about.hero-section.is-active-view .keyword-strip,
+      html body.view-about #about.hero-section.is-active-view .hero-actions {
+        justify-content: flex-start !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .keyword-strip {
+        margin-top: 18px !important;
+        gap: 8px !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .keyword-strip span {
+        border-color: rgba(35, 32, 28, 0.16) !important;
+        background: rgba(255, 255, 255, 0.72) !important;
+        color: #45626b !important;
+        backdrop-filter: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .profile-panel {
+        grid-area: profile !important;
+        position: sticky !important;
+        top: 104px !important;
+        width: 100% !important;
+        max-width: 320px !important;
+        margin: 0 !important;
+        padding: 0 0 24px !important;
+        display: block !important;
+        border: 0 !important;
+        border-top: 1px solid rgba(29, 28, 24, 0.16) !important;
+        border-bottom: 1px solid rgba(29, 28, 24, 0.16) !important;
+        background: transparent !important;
+        box-shadow: none !important;
+        backdrop-filter: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .portrait-wrap {
+        width: 148px !important;
+        margin: 24px 0 22px !important;
+        border: 0 !important;
+        border-radius: 50% !important;
+        box-shadow: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .quick-facts {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 14px !important;
+        padding-top: 0 !important;
+        border-top: 0 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .quick-facts p {
+        font-size: 0.8rem !important;
+        line-height: 1.45 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .link-grid {
+        margin-top: 22px !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 10px !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .link-grid a,
+      html body.view-about #about.hero-section.is-active-view .button.secondary {
+        border-color: rgba(29, 28, 24, 0.16) !important;
+        background: rgba(255, 255, 255, 0.58) !important;
+        color: #1f1d19 !important;
+        box-shadow: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .home-news-panel {
+        grid-area: news !important;
+        width: 100% !important;
+        margin: 2px 0 0 !important;
+        padding: 28px 0 0 !important;
+        border-top: 1px solid rgba(29, 28, 24, 0.16) !important;
+        background: transparent !important;
+        box-shadow: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news {
+        margin-top: 14px !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news::before {
+        display: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news li,
+      html body.view-about #about.hero-section.is-active-view .brief-news li:nth-child(n + 6) {
+        display: grid !important;
+        grid-template-columns: 96px minmax(0, 1fr) !important;
+        gap: 20px !important;
+        padding: 14px 0 !important;
+        border-top: 1px solid rgba(29, 28, 24, 0.1) !important;
+        background: transparent !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news li::after {
+        display: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news li span {
+        color: #7c746b !important;
+        font-size: 0.78rem !important;
+        letter-spacing: 0.08em !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news p {
+        color: #3e3a34 !important;
+        font-size: 0.94rem !important;
+        line-height: 1.58 !important;
+      }
+
+      @media (max-width: 900px) {
+        html body.view-about .site-header {
+          width: calc(100% - 24px) !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view {
+          width: calc(100% - 28px) !important;
+          padding: 18px 0 56px !important;
+          grid-template-columns: 1fr !important;
+          grid-template-areas:
+            "visual"
+            "copy"
+            "profile"
+            "news" !important;
+          gap: 28px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view::before {
+          height: clamp(190px, 58vw, 310px) !important;
+          background-position: center top !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .hero-copy h2 {
+          font-size: clamp(2rem, 9.5vw, 3.05rem) !important;
+          line-height: 1.06 !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .lead {
+          font-size: 0.98rem !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .profile-panel {
+          position: static !important;
+          max-width: none !important;
+          padding: 0 0 22px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .portrait-wrap {
+          width: 128px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .brief-news li,
+        html body.view-about #about.hero-section.is-active-view .brief-news li:nth-child(n + 6) {
+          grid-template-columns: 1fr !important;
+          gap: 6px !important;
+        }
+      }
+    </style>
+    <style id="melanie-inspired-preview-v2">
+      html body.view-about {
+        background: #f8f7f2 !important;
+      }
+
+      html body.view-about .site-header {
+        width: min(1040px, calc(100% - 36px)) !important;
+        height: auto !important;
+        min-height: 78px !important;
+        padding: 18px 0 !important;
+        background: rgba(248, 247, 242, 0.95) !important;
+        border-bottom: 1px solid rgba(30, 28, 25, 0.14) !important;
+        border-radius: 0 !important;
+      }
+
+      html body.view-about .brand {
+        font-size: 0.98rem !important;
+        letter-spacing: 0 !important;
+      }
+
+      html body.view-about .site-nav {
+        gap: 18px !important;
+      }
+
+      html body.view-about .site-nav a {
+        font-size: 0.86rem !important;
+        color: #5b5750 !important;
+      }
+
+      html body.view-about .site-nav a[aria-current="true"],
+      html body.view-about .site-nav a[aria-current="page"] {
+        color: #171614 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view {
+        width: min(1040px, calc(100% - 36px)) !important;
+        padding: 24px 0 82px !important;
+        grid-template-columns: minmax(0, 660px) minmax(250px, 300px) !important;
+        grid-template-areas:
+          "visual visual"
+          "copy profile"
+          "news profile" !important;
+        gap: 24px clamp(44px, 6vw, 80px) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view::before {
+        height: clamp(250px, 31vw, 380px) !important;
+        margin: 0 0 -74px !important;
+        background:
+          linear-gradient(180deg, rgba(248, 247, 242, 0) 0%, rgba(248, 247, 242, 0) 52%, #f8f7f2 96%),
+          url("assets/hero-ai-humanities-landscape.png") center 42% / cover no-repeat !important;
+        -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 62%, rgba(0, 0, 0, 0.78) 78%, transparent 100%) !important;
+        mask-image: linear-gradient(180deg, #000 0%, #000 62%, rgba(0, 0, 0, 0.78) 78%, transparent 100%) !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .hero-copy {
+        padding-top: 0 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .section-kicker {
+        margin: 0 0 14px !important;
+        color: #67615a !important;
+        font-family: Inter, "Segoe UI", Arial, sans-serif !important;
+        font-size: 0.74rem !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.18em !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .hero-copy h2 {
+        max-width: 660px !important;
+        margin: 0 0 22px !important;
+        font-size: clamp(2.35rem, 4.2vw, 3.85rem) !important;
+        line-height: 1.03 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .lead {
+        max-width: 650px !important;
+        font-size: 1rem !important;
+        line-height: 1.78 !important;
+        color: #3f3b35 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .lead.compact {
+        display: block !important;
+        color: #514c45 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .inline-interest-label {
+        margin: 30px 0 10px !important;
+        font-size: 0.78rem !important;
+        letter-spacing: 0.14em !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .keyword-strip {
+        display: block !important;
+        max-width: 650px !important;
+        margin: 0 0 22px !important;
+        color: #45626b !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .keyword-strip span {
+        display: inline !important;
+        margin: 0 12px 0 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        background: transparent !important;
+        color: #45626b !important;
+        font-size: 0.92rem !important;
+        font-weight: 650 !important;
+        line-height: 1.9 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .hero-actions {
+        display: flex !important;
+        gap: 18px !important;
+        margin-top: 20px !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .hero-actions .button {
+        width: auto !important;
+        min-height: 0 !important;
+        padding: 0 0 3px !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        border-bottom: 1px solid currentColor !important;
+        background: transparent !important;
+        color: #1d4e65 !important;
+        font-size: 0.94rem !important;
+        box-shadow: none !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .profile-panel {
+        top: 108px !important;
+        max-width: 300px !important;
+        padding: 18px 0 0 !important;
+        border-top: 0 !important;
+        border-bottom: 0 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .profile-panel::before {
+        content: "" !important;
+        display: block !important;
+        width: 54px !important;
+        height: 2px !important;
+        margin-bottom: 22px !important;
+        background: #1c1b18 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .portrait-wrap {
+        width: 116px !important;
+        margin: 0 0 24px !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .quick-facts {
+        gap: 16px !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .quick-facts span {
+        color: #1f1d19 !important;
+        font-size: 0.72rem !important;
+        letter-spacing: 0.12em !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .quick-facts p {
+        color: #3e3a34 !important;
+        font-size: 0.86rem !important;
+        line-height: 1.52 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .link-grid {
+        display: block !important;
+        margin-top: 24px !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .link-grid a {
+        display: inline-block !important;
+        width: auto !important;
+        margin: 0 16px 10px 0 !important;
+        padding: 0 0 2px !important;
+        border: 0 !important;
+        border-bottom: 1px solid currentColor !important;
+        background: transparent !important;
+        color: #1d4e65 !important;
+        font-size: 0.88rem !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .home-news-panel {
+        margin-top: 16px !important;
+        padding-top: 38px !important;
+        border-top: 0 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-label {
+        color: #171614 !important;
+        font-size: 0.86rem !important;
+        letter-spacing: 0.14em !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news li,
+      html body.view-about #about.hero-section.is-active-view .brief-news li:nth-child(n + 6) {
+        grid-template-columns: 86px minmax(0, 1fr) !important;
+        padding: 12px 0 !important;
+        border-top: 0 !important;
+      }
+
+      html body.view-about #about.hero-section.is-active-view .brief-news li span {
+        color: #827a70 !important;
+        letter-spacing: 0 !important;
+        text-transform: none !important;
+      }
+
+      @media (max-width: 900px) {
+        html body.view-about .site-header {
+          width: calc(100% - 32px) !important;
+          padding: 18px 0 16px !important;
+        }
+
+        html body.view-about .brand {
+          font-size: 1rem !important;
+        }
+
+        html body.view-about .brand-mark {
+          width: 34px !important;
+          height: 34px !important;
+        }
+
+        html body.view-about .site-nav {
+          gap: 8px 16px !important;
+          align-items: center !important;
+        }
+
+        html body.view-about .site-nav a {
+          font-size: 0.94rem !important;
+          line-height: 1.25 !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view {
+          width: calc(100% - 32px) !important;
+          padding-top: 22px !important;
+          grid-template-columns: 1fr !important;
+          grid-template-areas:
+            "visual"
+            "copy"
+            "profile"
+            "news" !important;
+          gap: 22px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view::before {
+          height: clamp(210px, 62vw, 320px) !important;
+          margin-bottom: -42px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .hero-copy h2 {
+          font-size: clamp(2.15rem, 9vw, 2.8rem) !important;
+          max-width: 680px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .lead {
+          font-size: 1rem !important;
+          line-height: 1.68 !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .section-kicker {
+          font-size: 0.72rem !important;
+          line-height: 1.65 !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .profile-panel {
+          max-width: none !important;
+          padding-top: 18px !important;
+          border-top: 1px solid rgba(30, 28, 25, 0.14) !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .profile-panel::before {
+          display: none !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .portrait-wrap {
+          width: 112px !important;
+        }
+
+        html body.view-about #about.hero-section.is-active-view .brief-news li,
+        html body.view-about #about.hero-section.is-active-view .brief-news li:nth-child(n + 6) {
+          grid-template-columns: 72px minmax(0, 1fr) !important;
+          gap: 12px !important;
+        }
+      }
+    </style>
+    <style id="chronological-publications-preview">
+      html #publications.section-block.is-active-view {
+        max-width: 1040px !important;
+      }
+
+      html #publications .section-heading {
+        margin-bottom: 22px !important;
+      }
+
+      html #publications .filter-bar.pub-view-note {
+        justify-content: flex-start !important;
+        gap: 8px !important;
+        margin: 0 0 34px !important;
+        padding: 0 !important;
+        border: 0 !important;
+        background: transparent !important;
+      }
+
+      html #publications .filter-button {
+        border-radius: 999px !important;
+        border-color: rgba(30, 28, 25, 0.16) !important;
+        background: transparent !important;
+        color: #4f4a43 !important;
+        box-shadow: none !important;
+      }
+
+      html #publications .filter-button.active {
+        background: #1c1b18 !important;
+        color: #fffaf0 !important;
+        border-color: #1c1b18 !important;
+      }
+
+      html #publications .chronological-publications {
+        display: grid !important;
+        grid-template-columns: 220px minmax(0, 1fr) !important;
+        column-gap: clamp(24px, 3vw, 44px) !important;
+        row-gap: 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        background: transparent !important;
+      }
+
+      html #publications .chronological-publications .pub-group-heading {
+        grid-column: 1 !important;
+        align-self: start !important;
+        position: sticky !important;
+        top: 96px !important;
+        margin: 16px 0 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        color: #171614 !important;
+        font-family: Georgia, "Times New Roman", serif !important;
+        font-size: clamp(1.45rem, 2.3vw, 2.05rem) !important;
+        font-weight: 700 !important;
+        line-height: 1 !important;
+        letter-spacing: 0 !important;
+      }
+
+      html #publications .chronological-publications .visual-publication {
+        grid-column: 2 !important;
+        display: block !important;
+        align-items: start !important;
+        margin: 0 !important;
+        padding: 18px 0 30px !important;
+        border: 0 !important;
+        border-bottom: 1px solid rgba(30, 28, 25, 0.1) !important;
+        background: transparent !important;
+        box-shadow: none !important;
+      }
+
+      html #publications .chronological-publications .visual-publication:hover {
+        transform: none !important;
+        box-shadow: none !important;
+      }
+
+      html #publications .pub-thumb {
+        display: none !important;
+      }
+
+      html #publications .pub-thumb::before,
+      html #publications .pub-thumb::after {
+        content: "" !important;
+        position: absolute !important;
+        inset: 0 !important;
+      }
+
+      html #publications .pub-thumb::before {
+        background:
+          radial-gradient(circle at 22% 28%, rgba(255, 255, 255, 0.82) 0 4px, transparent 5px),
+          radial-gradient(circle at 54% 48%, rgba(255, 255, 255, 0.6) 0 3px, transparent 4px),
+          radial-gradient(circle at 78% 30%, rgba(255, 255, 255, 0.72) 0 3px, transparent 4px),
+          linear-gradient(135deg, rgba(255, 255, 255, 0.3), transparent 48%),
+          var(--pub-art, linear-gradient(135deg, #f0c9a6, #8fb7bc)) !important;
+      }
+
+      html #publications .pub-thumb::after {
+        opacity: 0.42 !important;
+        background:
+          linear-gradient(28deg, transparent 0 34%, rgba(255, 255, 255, 0.62) 35% 37%, transparent 38%),
+          linear-gradient(152deg, transparent 0 58%, rgba(31, 51, 54, 0.34) 59% 60%, transparent 61%),
+          repeating-linear-gradient(0deg, transparent 0 10px, rgba(255, 255, 255, 0.22) 11px 12px) !important;
+      }
+
+      html #publications .pub-thumb span {
+        position: absolute !important;
+        left: 12px !important;
+        right: 12px !important;
+        bottom: 10px !important;
+        z-index: 1 !important;
+        color: rgba(25, 24, 22, 0.72) !important;
+        font-size: 0.68rem !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.12em !important;
+        text-transform: uppercase !important;
+      }
+
+      html #publications .thumb-ai { --pub-art: linear-gradient(135deg, #f6d3b9 0%, #f5ead7 48%, #83aeb8 100%); }
+      html #publications .thumb-paratext { --pub-art: linear-gradient(135deg, #ead8bd 0%, #becbc0 52%, #7898a3 100%); }
+      html #publications .thumb-politics { --pub-art: linear-gradient(135deg, #d9e2df 0%, #f0d8b4 50%, #768da3 100%); }
+      html #publications .thumb-character { --pub-art: linear-gradient(135deg, #f0caa4 0%, #e4e8dc 45%, #6f9b93 100%); }
+      html #publications .thumb-refusal { --pub-art: linear-gradient(135deg, #ece3d5 0%, #c8b6a6 48%, #516f82 100%); }
+      html #publications .thumb-pedagogy { --pub-art: linear-gradient(135deg, #f5dfb7 0%, #d9e1ca 55%, #80a7a4 100%); }
+      html #publications .thumb-diplomacy { --pub-art: linear-gradient(135deg, #ead2b8 0%, #b8c6b6 48%, #517c8c 100%); }
+      html #publications .thumb-wuxia { --pub-art: linear-gradient(135deg, #ead7c2 0%, #d0b79d 44%, #4f6f74 100%); }
+      html #publications .thumb-fields { --pub-art: linear-gradient(135deg, #f3e2c8 0%, #c7d3ce 45%, #8b9b70 100%); }
+      html #publications .thumb-topic { --pub-art: linear-gradient(135deg, #eee7d9 0%, #e0c79d 48%, #6d8c9a 100%); }
+      html #publications .thumb-review { --pub-art: linear-gradient(135deg, #efe8dc 0%, #d8d1c5 55%, #8d9b9a 100%); }
+      html #publications .thumb-book { --pub-art: linear-gradient(135deg, #ead7bf 0%, #d8c2a0 54%, #697b83 100%); }
+      html #publications .thumb-poetry { --pub-art: linear-gradient(135deg, #f1d8bd 0%, #ebe2ce 50%, #94a68d 100%); }
+      html #publications .thumb-culture { --pub-art: linear-gradient(135deg, #edc6a9 0%, #d9dfc9 52%, #7998a0 100%); }
+      html #publications .thumb-memory { --pub-art: linear-gradient(135deg, #e8dac9 0%, #c9c1b5 50%, #7d8c93 100%); }
+      html #publications .thumb-network { --pub-art: linear-gradient(135deg, #eac9aa 0%, #dfe4d7 45%, #6f9ba6 100%); }
+      html #publications .thumb-map { --pub-art: linear-gradient(135deg, #f0d6aa 0%, #d6d6bd 48%, #668fa0 100%); }
+      html #publications .thumb-circulation { --pub-art: linear-gradient(135deg, #efd2b9 0%, #ccd5c4 50%, #7b9f94 100%); }
+
+      html #publications .visual-publication .pub-entry {
+        min-width: 0 !important;
+      }
+
+      html #publications .visual-publication .tag {
+        display: inline-block !important;
+        width: auto !important;
+        margin: 0 0 9px !important;
+        padding: 0 !important;
+        border: 0 !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        color: #6c6258 !important;
+        font-size: 0.72rem !important;
+        font-weight: 800 !important;
+        letter-spacing: 0.12em !important;
+        text-transform: uppercase !important;
+        box-shadow: none !important;
+      }
+
+      html #publications .visual-publication h3 {
+        margin: 0 0 8px !important;
+        color: #1c1b18 !important;
+        font-family: Inter, "Segoe UI", Arial, sans-serif !important;
+        font-size: clamp(1.05rem, 1.8vw, 1.28rem) !important;
+        font-weight: 760 !important;
+        line-height: 1.28 !important;
+      }
+
+      html #publications .visual-publication p {
+        max-width: 720px !important;
+        margin: 0 !important;
+        color: #514c45 !important;
+        font-size: 0.94rem !important;
+        line-height: 1.58 !important;
+      }
+
+      html #publications .visual-publication .pub-links {
+        display: flex !important;
+        gap: 14px !important;
+        margin-top: 11px !important;
+      }
+
+      html #publications .visual-publication .pub-links a {
+        padding: 0 0 2px !important;
+        border: 0 !important;
+        border-bottom: 1px solid currentColor !important;
+        border-radius: 0 !important;
+        background: transparent !important;
+        color: #1d4e65 !important;
+        font-size: 0.88rem !important;
+        font-weight: 700 !important;
+        box-shadow: none !important;
+      }
+
+      @media (max-width: 800px) {
+        html #publications .chronological-publications {
+          grid-template-columns: 1fr !important;
+        }
+
+        html #publications .chronological-publications .pub-group-heading,
+        html #publications .chronological-publications .visual-publication {
+          grid-column: 1 !important;
+        }
+
+        html #publications .chronological-publications .pub-group-heading {
+          position: static !important;
+          margin: 30px 0 2px !important;
+          font-size: 2rem !important;
+        }
+
+        html #publications .chronological-publications .visual-publication {
+          display: block !important;
+          padding: 16px 0 22px !important;
+        }
+
+        html #publications .pub-thumb {
+          width: 92px !important;
+          border-radius: 3px !important;
+        }
+
+        html #publications .pub-thumb span {
+          left: 8px !important;
+          right: 8px !important;
+          bottom: 7px !important;
+          font-size: 0.52rem !important;
+        }
+
+        html #publications .visual-publication h3 {
+          font-size: 1rem !important;
+        }
+
+        html #publications .visual-publication p {
+          font-size: 0.88rem !important;
+        }
+      }
+
+      html #publications .publication-list.chronological-publications article.publication-card.visual-publication {
+        display: block !important;
+        grid-template-columns: none !important;
+      }
+
+      html #publications .publication-list.chronological-publications article.publication-card.visual-publication.has-thumbnail {
+        display: grid !important;
+        grid-template-columns: 154px minmax(0, 1fr) !important;
+      }
+
+      html #publications .publication-list.chronological-publications article.publication-card.visual-publication .pub-thumb {
+        display: block !important;
+        flex: 0 0 154px !important;
+        position: relative !important;
+        width: 154px !important;
+        height: auto !important;
+        aspect-ratio: 1.3 / 1 !important;
+        overflow: hidden !important;
+      }
+
+      @media (max-width: 800px) {
+        html #publications .publication-list.chronological-publications article.publication-card.visual-publication {
+          grid-template-columns: none !important;
+        }
+
+        html #publications .publication-list.chronological-publications article.publication-card.visual-publication.has-thumbnail {
+          grid-template-columns: 92px minmax(0, 1fr) !important;
+        }
+
+        html #publications .publication-list.chronological-publications article.publication-card.visual-publication .pub-thumb {
+          flex-basis: 92px !important;
+          width: 92px !important;
+        }
+      }
+    </style>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -3517,7 +4553,7 @@
             </div>
           </div>
 
-          <div class="filter-bar" aria-label="Publication filters">
+          <div class="filter-bar pub-view-note" aria-label="Publication filters">
             <button class="filter-button active" type="button" data-filter="all">All</button>
             <button class="filter-button" type="button" data-filter="preprint">Preprints</button>
             <button class="filter-button" type="button" data-filter="journal">Journal Articles</button>
@@ -3527,162 +4563,181 @@
             <button class="filter-button" type="button" data-filter="review">Book Reviews</button>
           </div>
 
-          <div class="publication-list">
-            <h3 class="pub-group-heading">Preprints</h3>
-            <article class="publication-card" data-type="preprint">
-              <div class="tag preprint">Preprint</div>
-              <div>
+          <div class="publication-list chronological-publications">
+            <h3 class="pub-group-heading">Forthcoming</h3>
+            <article class="publication-card visual-publication" data-type="chapter">
+              <div class="pub-thumb thumb-network" aria-hidden="true"><span>Networks</span></div>
+              <div class="pub-entry">
+                <div class="tag chapter">Book Chapter</div>
+                <h3>Peripheral connections: BERT topic modeling of Chinese literature's Brazilian presence</h3>
+                <p><strong>Zhou, M.</strong> (Accepted). In <em>Beyond the World Capital of Letters</em>. Bloomsbury.</p>
+              </div>
+            </article>
+
+            <article class="publication-card visual-publication" data-type="chapter">
+              <div class="pub-thumb thumb-map" aria-hidden="true"><span>Mapping</span></div>
+              <div class="pub-entry">
+                <div class="tag chapter">Book Chapter</div>
+                <h3>Mapping the translation and circulation of Portuguese literature in China (1942-2022): A digital humanities approach</h3>
+                <p><strong>Zhou, M.</strong> (Accepted). In <em>Digital Translation History</em>. John Benjamins.</p>
+              </div>
+            </article>
+
+            <article class="publication-card visual-publication" data-type="chapter">
+              <div class="pub-thumb thumb-circulation" aria-hidden="true"><span>Circulation</span></div>
+              <div class="pub-entry">
+                <div class="tag chapter">Book Chapter</div>
+                <h3>Exploring the circulation and canonization of Chinese internet literature in Brazil: A case study of Mo Dao Zu Shi</h3>
+                <p><strong>Zhou, M.</strong> (In print). In <em>Translating Chinese Internet Literature</em>. Routledge.</p>
+              </div>
+            </article>
+
+            <h3 class="pub-group-heading">2026</h3>
+            <article class="publication-card visual-publication" data-type="proceeding">
+              <div class="pub-thumb thumb-ai" aria-hidden="true"><span>AI</span></div>
+              <div class="pub-entry">
+                <div class="tag proceeding">Conference Proceeding</div>
+                <h3>What Makes AI a Good Cultural Mediator? Evidence from Literary Paratexts</h3>
+                <p><strong>Zhou, M.</strong> (2026). In <em>Culture x AI: Evaluating AI as a Cultural Technology</em>, ICML 2026, Seoul.</p>
+              </div>
+            </article>
+
+            <article class="publication-card visual-publication" data-type="conference">
+              <div class="pub-thumb thumb-paratext" aria-hidden="true"><span>Paratexts</span></div>
+              <div class="pub-entry">
+                <div class="tag conference">Conference Paper</div>
+                <h3>Literary Canons and Algorithmic Framing: Analysis of LLM-Generated Paratexts</h3>
+                <p><strong>Zhou, M.</strong> (2026). HKADH 2026, The Chinese University of Hong Kong.</p>
+              </div>
+            </article>
+
+            <h3 class="pub-group-heading">2025</h3>
+            <article class="publication-card visual-publication" data-type="preprint">
+              <div class="pub-thumb thumb-politics" aria-hidden="true"><span>LLMs</span></div>
+              <div class="pub-entry">
+                <div class="tag preprint">Preprint</div>
                 <h3>Politically speaking: LLMs on changing international affairs</h3>
                 <p><strong>Cao, X., Chung, W. K., Zhao, Y., & Zhou, M.</strong> (2025). <em>arXiv preprint</em>.</p>
                 <div class="pub-links"><a href="http://arxiv.org/abs/2510.24582">arXiv</a></div>
               </div>
             </article>
 
-            <h3 class="pub-group-heading">Journal Articles</h3>
-            <article class="publication-card" data-type="journal">
-              <div class="tag journal">Journal Article</div>
-              <div>
+            <article class="publication-card visual-publication" data-type="journal">
+              <div class="pub-thumb thumb-character" aria-hidden="true"><span>Character</span></div>
+              <div class="pub-entry">
+                <div class="tag journal">Journal Article</div>
                 <h3>Modelling character in translation: Computational and qualitative insights from wuxia fan translations</h3>
                 <p><strong>Zhou, M.</strong> (2025). <em>Digital Studies in Language and Literature</em>, 2(2), 246-273.</p>
                 <div class="pub-links"><a href="https://doi.org/10.1515/dsll-2025-0017">DOI</a></div>
               </div>
             </article>
 
-            <article class="publication-card" data-type="journal">
-              <div class="tag journal">Journal Article</div>
-              <div>
-                <h3>Three faces of heroism: An empirical study of indirect literary translation between Chinese-English-Portuguese of Wuxia fiction</h3>
-                <p><strong>Zhou, M.</strong> (2024). <em>Corpus-based Studies across Humanities</em>, 2(1), 157-186.</p>
-                <div class="pub-links"><a href="https://doi.org/10.1515/csh-2024-0009">DOI</a></div>
-              </div>
-            </article>
-
-            <article class="publication-card" data-type="journal">
-              <div class="tag journal">Journal Article</div>
-              <div>
-                <h3>Exploring homology of fields in translation: A sociological examination of Chinese contemporary literature translation in Portugal and Brazil</h3>
-                <p><strong>Zhou, M.</strong> (2024). <em>Babel</em>, 70(6), 852-870.</p>
-                <div class="pub-links"><a href="https://doi.org/10.1075/babel.00363.zho">DOI</a></div>
-              </div>
-            </article>
-
-            <article class="publication-card" data-type="journal">
-              <div class="tag journal">Journal Article</div>
-              <div>
-                <h3>Translation of culture-specific concepts in the context of indirect translation: The case of O Assassino</h3>
-                <p><strong>Zhou, M.</strong> (2019). <em>Diacritica</em>, 32(2), 387-412.</p>
-                <div class="pub-links"><a href="https://doi.org/10.21814/diacritica.447">DOI</a></div>
-              </div>
-            </article>
-
-            <article class="publication-card" data-type="journal">
-              <div class="tag journal">Journal Article</div>
-              <div>
-                <h3>A China Fica ao Lado: Memory displacement of Macau in the 20th century</h3>
-                <p><strong>Zhou, M.</strong> (2017). <em>Journal of Macau Studies</em>, 2, 65-69.</p>
-              </div>
-            </article>
-
-            <h3 class="pub-group-heading">Book Chapters</h3>
-            <article class="publication-card" data-type="chapter">
-              <div class="tag chapter">Book Chapter</div>
-              <div>
-                <h3>Peripheral connections: BERT topic modeling of Chinese literature's Brazilian presence</h3>
-                <p><strong>Zhou, M.</strong> (Accepted). In <em>Beyond the World Capital of Letters</em>. Bloomsbury.</p>
-              </div>
-            </article>
-
-            <article class="publication-card" data-type="chapter">
-              <div class="tag chapter">Book Chapter</div>
-              <div>
-                <h3>Mapping the translation and circulation of Portuguese literature in China (1942-2022): A digital humanities approach</h3>
-                <p><strong>Zhou, M.</strong> (Accepted). In <em>Digital Translation History</em>. John Benjamins.</p>
-              </div>
-            </article>
-
-            <article class="publication-card" data-type="chapter">
-              <div class="tag chapter">Book Chapter</div>
-              <div>
-                <h3>Exploring the circulation and canonization of Chinese internet literature in Brazil: A case study of Mo Dao Zu Shi</h3>
-                <p><strong>Zhou, M.</strong> (In print). In <em>Translating Chinese Internet Literature</em>. Routledge.</p>
-              </div>
-            </article>
-
-            <article class="publication-card" data-type="chapter">
-              <div class="tag chapter">Book Chapter</div>
-              <div>
-                <h3>Translation and reception of Sophia de Mello Breyner Andresen in China: From a sociological perspective</h3>
-                <p><strong>Zhou, M.</strong> (2022). In V. Borges (Ed.), <em>Mapas Esquivos</em> (No. 2, pp. 34-45). Cultural Institute Publishing House.</p>
-              </div>
-            </article>
-
-            <h3 class="pub-group-heading">Conference Proceedings</h3>
-            <article class="publication-card" data-type="proceeding">
-              <div class="tag proceeding">Conference Proceeding</div>
-              <div>
-                <h3>What Makes AI a Good Cultural Mediator? Evidence from Literary Paratexts</h3>
-                <p><strong>Zhou, M.</strong> (2026). In <em>Culture x AI: Evaluating AI as a Cultural Technology</em>, ICML 2026, Seoul.</p>
-                <div class="pub-links"><a href="assets/papers/what-makes-ai-a-good-cultural-mediator.pdf">PDF</a></div>
-              </div>
-            </article>
-
-            <article class="publication-card" data-type="proceeding">
-              <div class="tag proceeding">Conference Proceeding</div>
-              <div>
+            <article class="publication-card visual-publication" data-type="proceeding">
+              <div class="pub-thumb thumb-refusal" aria-hidden="true"><span>Refusal</span></div>
+              <div class="pub-entry">
+                <div class="tag proceeding">Conference Proceeding</div>
                 <h3>No joke: Refusal policies for LLM cross-cultural sensitivity</h3>
                 <p><strong>Zhou, M.</strong>, & Cao, X. (2025). <em>Proceedings of AMCIS 2025</em>. Best Paper Nominee.</p>
                 <div class="pub-links"><a href="https://aisel.aisnet.org/amcis2025/sig_ccris/sig_ccris/1">Paper</a></div>
               </div>
             </article>
 
-            <h3 class="pub-group-heading">Conference Papers</h3>
-            <article class="publication-card" data-type="conference">
-              <div class="tag conference">Conference Paper</div>
-              <div>
-                <h3>Literary Canons and Algorithmic Framing: Analysis of LLM-Generated Paratexts</h3>
-                <p><strong>Zhou, M.</strong> (2026). HKADH 2026, The Chinese University of Hong Kong.</p>
-              </div>
-            </article>
-
-            <article class="publication-card" data-type="conference">
-              <div class="tag conference">Conference Paper</div>
-              <div>
+            <article class="publication-card visual-publication" data-type="conference">
+              <div class="pub-thumb thumb-pedagogy" aria-hidden="true"><span>Teaching</span></div>
+              <div class="pub-entry">
+                <div class="tag conference">Conference Paper</div>
                 <h3>Mind the Gap: Investigating Digital Humanities Integration in Translation Studies Education</h3>
                 <p><strong>Zhou, M.</strong> (2025). DH2025, NOVA FCSH, Lisbon.</p>
               </div>
             </article>
 
-            <article class="publication-card" data-type="conference">
-              <div class="tag conference">Conference Paper</div>
-              <div>
+            <article class="publication-card visual-publication" data-type="conference">
+              <div class="pub-thumb thumb-diplomacy" aria-hidden="true"><span>Diplomacy</span></div>
+              <div class="pub-entry">
+                <div class="tag conference">Conference Paper</div>
                 <h3>Mapping Cultural Diplomacy: A Network Analysis of China's Silk Road Book Project Translation Initiative</h3>
                 <p><strong>Zhou, M.</strong> (2025). HKADH2025, The University of Hong Kong.</p>
               </div>
             </article>
 
-            <article class="publication-card" data-type="conference">
-              <div class="tag conference">Conference Paper</div>
-              <div>
+            <h3 class="pub-group-heading">2024</h3>
+            <article class="publication-card visual-publication" data-type="journal">
+              <div class="pub-thumb thumb-wuxia" aria-hidden="true"><span>Wuxia</span></div>
+              <div class="pub-entry">
+                <div class="tag journal">Journal Article</div>
+                <h3>Three faces of heroism: An empirical study of indirect literary translation between Chinese-English-Portuguese of Wuxia fiction</h3>
+                <p><strong>Zhou, M.</strong> (2024). <em>Corpus-based Studies across Humanities</em>, 2(1), 157-186.</p>
+                <div class="pub-links"><a href="https://doi.org/10.1515/csh-2024-0009">DOI</a></div>
+              </div>
+            </article>
+
+            <article class="publication-card visual-publication" data-type="journal">
+              <div class="pub-thumb thumb-fields" aria-hidden="true"><span>Fields</span></div>
+              <div class="pub-entry">
+                <div class="tag journal">Journal Article</div>
+                <h3>Exploring homology of fields in translation: A sociological examination of Chinese contemporary literature translation in Portugal and Brazil</h3>
+                <p><strong>Zhou, M.</strong> (2024). <em>Babel</em>, 70(6), 852-870.</p>
+                <div class="pub-links"><a href="https://doi.org/10.1075/babel.00363.zho">DOI</a></div>
+              </div>
+            </article>
+
+            <article class="publication-card visual-publication" data-type="conference">
+              <div class="pub-thumb thumb-topic" aria-hidden="true"><span>Topics</span></div>
+              <div class="pub-entry">
+                <div class="tag conference">Conference Paper</div>
                 <h3>Building Bridges or Walls? Topic Modeling for Analyzing Trust in Indirect Literary Translation</h3>
                 <p><strong>Zhou, M.</strong> (2024). DH2024, George Mason University. Paul Fortier Prize Nominee.</p>
               </div>
             </article>
 
-            <h3 class="pub-group-heading">Book Reviews</h3>
-            <article class="publication-card" data-type="review">
-              <div class="tag review">Book Review</div>
-              <div>
+            <article class="publication-card visual-publication" data-type="review">
+              <div class="pub-thumb thumb-review" aria-hidden="true"><span>Review</span></div>
+              <div class="pub-entry">
+                <div class="tag review">Book Review</div>
                 <h3>Review of Corpora in Interpreting Studies: East Asia Perspective</h3>
                 <p><strong>Zhou, M.</strong> (2024). <em>Journal of Translation Studies</em>, 8(2), 125-129.</p>
               </div>
             </article>
 
-            <article class="publication-card" data-type="review">
-              <div class="tag review">Book Review</div>
-              <div>
+            <h3 class="pub-group-heading">2023</h3>
+            <article class="publication-card visual-publication" data-type="review">
+              <div class="pub-thumb thumb-book" aria-hidden="true"><span>Book</span></div>
+              <div class="pub-entry">
+                <div class="tag review">Book Review</div>
                 <h3>Review of Indirect Translation Explained</h3>
                 <p><strong>Zhou, M.</strong> (2023). <em>Babel</em>, 69(5), 720-723.</p>
                 <div class="pub-links"><a href="https://doi.org/10.1075/babel.23055.zho">DOI</a></div>
+              </div>
+            </article>
+
+            <h3 class="pub-group-heading">2022</h3>
+            <article class="publication-card visual-publication" data-type="chapter">
+              <div class="pub-thumb thumb-poetry" aria-hidden="true"><span>Poetry</span></div>
+              <div class="pub-entry">
+                <div class="tag chapter">Book Chapter</div>
+                <h3>Translation and reception of Sophia de Mello Breyner Andresen in China: From a sociological perspective</h3>
+                <p><strong>Zhou, M.</strong> (2022). In V. Borges (Ed.), <em>Mapas Esquivos</em> (No. 2, pp. 34-45). Cultural Institute Publishing House.</p>
+              </div>
+            </article>
+
+            <h3 class="pub-group-heading">2019</h3>
+            <article class="publication-card visual-publication" data-type="journal">
+              <div class="pub-thumb thumb-culture" aria-hidden="true"><span>Culture</span></div>
+              <div class="pub-entry">
+                <div class="tag journal">Journal Article</div>
+                <h3>Translation of culture-specific concepts in the context of indirect translation: The case of O Assassino</h3>
+                <p><strong>Zhou, M.</strong> (2019). <em>Diacritica</em>, 32(2), 387-412.</p>
+                <div class="pub-links"><a href="https://doi.org/10.21814/diacritica.447">DOI</a></div>
+              </div>
+            </article>
+
+            <h3 class="pub-group-heading">2017</h3>
+            <article class="publication-card visual-publication" data-type="journal">
+              <div class="pub-thumb thumb-memory" aria-hidden="true"><span>Memory</span></div>
+              <div class="pub-entry">
+                <div class="tag journal">Journal Article</div>
+                <h3>A China Fica ao Lado: Memory displacement of Macau in the 20th century</h3>
+                <p><strong>Zhou, M.</strong> (2017). <em>Journal of Macau Studies</em>, 2, 65-69.</p>
               </div>
             </article>
           </div>

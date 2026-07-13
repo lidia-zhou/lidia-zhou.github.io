@@ -200,8 +200,7 @@ window.SITE_CONTENT = {
       type: "proceeding",
       typeLabel: "Conference Proceeding",
       title: "What Makes AI a Good Cultural Mediator? Evidence from Literary Paratexts",
-      citation: "Zhou, M. (2026). In Culture x AI: Evaluating AI as a Cultural Technology, ICML 2026, Seoul.",
-      links: [{ label: "PDF", href: "assets/papers/what-makes-ai-a-good-cultural-mediator.pdf" }]
+      citation: "Zhou, M. (2026). In Culture x AI: Evaluating AI as a Cultural Technology, ICML 2026, Seoul."
     },
     {
       type: "chapter",

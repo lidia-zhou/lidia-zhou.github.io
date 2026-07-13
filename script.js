@@ -128,28 +128,49 @@ const renderContent = () => {
       .join('');
   }
 
-  const groupLabels = {
-    preprint: 'Preprints',
-    journal: 'Journal Articles',
-    chapter: 'Book Chapters',
-    proceeding: 'Conference Proceedings',
-    conference: 'Conference Papers',
-    review: 'Book Reviews'
+  const publicationPreviewMeta = {
+    "Politically speaking: LLMs on changing international affairs": { group: "2025", thumb: "thumb-politics", label: "LLMs" },
+    "Modelling character in translation: Computational and qualitative insights from wuxia fan translations": { group: "2025", thumb: "thumb-character", label: "Character" },
+    "Three faces of heroism: An empirical study of indirect literary translation between Chinese-English-Portuguese of Wuxia fiction": { group: "2024", thumb: "thumb-wuxia", label: "Wuxia" },
+    "Exploring homology of fields in translation: A sociological examination of Chinese contemporary literature translation in Portugal and Brazil": { group: "2024", thumb: "thumb-fields", label: "Fields" },
+    "Translation of culture-specific concepts in the context of indirect translation: The case of O Assassino": { group: "2019", thumb: "thumb-culture", label: "Culture" },
+    "A China Fica ao Lado: Memory displacement of Macau in the 20th century": { group: "2017", thumb: "thumb-memory", label: "Memory" },
+    "Peripheral connections: BERT topic modeling of Chinese literature's Brazilian presence": { group: "Forthcoming", thumb: "thumb-network", label: "Networks" },
+    "Mapping the translation and circulation of Portuguese literature in China (1942-2022): A digital humanities approach": { group: "Forthcoming", thumb: "thumb-map", label: "Mapping" },
+    "Exploring the circulation and canonization of Chinese internet literature in Brazil: A case study of Mo Dao Zu Shi": { group: "Forthcoming", thumb: "thumb-circulation", label: "Circulation" },
+    "What Makes AI a Good Cultural Mediator? Evidence from Literary Paratexts": { group: "2026", thumb: "thumb-ai", label: "AI" },
+    "Translation and reception of Sophia de Mello Breyner Andresen in China: From a sociological perspective": { group: "2022", thumb: "thumb-poetry", label: "Poetry" },
+    "No joke: Refusal policies for LLM cross-cultural sensitivity": { group: "2025", thumb: "thumb-refusal", label: "Refusal" },
+    "Literary Canons and Algorithmic Framing: Analysis of LLM-Generated Paratexts": { group: "2026", thumb: "thumb-paratext", label: "Paratexts" },
+    "Mind the Gap: Investigating Digital Humanities Integration in Translation Studies Education": { group: "2025", thumb: "thumb-pedagogy", label: "Teaching" },
+    "Mapping Cultural Diplomacy: A Network Analysis of China's Silk Road Book Project Translation Initiative": { group: "2025", thumb: "thumb-diplomacy", label: "Diplomacy" },
+    "Building Bridges or Walls? Topic Modeling for Analyzing Trust in Indirect Literary Translation": { group: "2024", thumb: "thumb-topic", label: "Topics" },
+    "Review of Corpora in Interpreting Studies: East Asia Perspective": { group: "2024", thumb: "thumb-review", label: "Review" },
+    "Review of Indirect Translation Explained": { group: "2023", thumb: "thumb-book", label: "Book" }
   };
+
+  const publicationGroups = ["Forthcoming", "2026", "2025", "2024", "2023", "2022", "2019", "2017"];
   const publicationList = document.querySelector('.publication-list');
   if (publicationList) {
-    publicationList.innerHTML = Object.entries(groupLabels)
-      .map(([type, label]) => {
-        const items = content.publications.filter((publication) => publication.type === type);
+    publicationList.classList.add('chronological-publications');
+    publicationList.innerHTML = publicationGroups
+      .map((group) => {
+        const items = content.publications.filter((publication) => publicationPreviewMeta[publication.title]?.group === group);
         if (!items.length) return '';
         return `
-          <h3 class="pub-group-heading">${escapeHtml(label)}</h3>
+          <h3 class="pub-group-heading">${escapeHtml(group)}</h3>
           ${items
             .map(
-              (publication) => `
-                <article class="publication-card" data-type="${escapeHtml(publication.type)}">
-                  <div class="tag ${escapeHtml(publication.type)}">${escapeHtml(publication.typeLabel)}</div>
-                  <div>
+              (publication) => {
+                const meta = publicationPreviewMeta[publication.title] || {
+                  thumb: "thumb-review",
+                  label: publication.typeLabel
+                };
+                return `
+                <article class="publication-card visual-publication${meta.realThumb ? ' has-thumbnail' : ''}" data-type="${escapeHtml(publication.type)}">
+                  ${meta.realThumb ? `<div class="pub-thumb ${escapeHtml(meta.thumb)}" aria-hidden="true"><span>${escapeHtml(meta.label)}</span></div>` : ''}
+                  <div class="pub-entry">
+                    <div class="tag ${escapeHtml(publication.type)}">${escapeHtml(publication.typeLabel)}</div>
                     <h3>${escapeHtml(publication.title)}</h3>
                     <p>${escapeHtml(publication.citation)}</p>
                     ${
@@ -161,7 +182,8 @@ const renderContent = () => {
                     }
                   </div>
                 </article>
-              `
+              `;
+              }
             )
             .join('')}
         `;
