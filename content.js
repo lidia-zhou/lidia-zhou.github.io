@@ -138,22 +138,112 @@ window.SITE_CONTENT = {
 
   publications: [
     {
-      type: "preprint",
-      typeLabel: "Preprint",
-      title: "Politically speaking: LLMs on changing international affairs",
-      citation: "Cao, X., Chung, W. K., Zhao, Y., & Zhou, M. (2025). arXiv preprint.",
-      links: [{ label: "arXiv", href: "http://arxiv.org/abs/2510.24582" }]
+      type: "monograph",
+      typeLabel: "Academic Monograph",
+      group: "Forthcoming",
+      title: "Contemporary Chinese literature in Portugal and Brazil: World literary circulation through a borrowed periscope",
+      citation: "Zhou, M. (Forthcoming, 2027). Routledge."
+    },
+    {
+      type: "chapter",
+      typeLabel: "Book Chapter",
+      group: "Forthcoming",
+      title: "Peripheral connections: BERT topic modeling of Chinese literature's Brazilian presence",
+      citation: "Zhou, M. (Forthcoming, April 2027). In E. Bournot, J. J. Locane, & R. Almendros (Eds.), World Literatures from Below: Tracing Literary Circulation across the Global South. Bloomsbury."
     },
     {
       type: "journal",
       typeLabel: "Journal Article",
+      group: "2026",
+      title: "Safe, Fluent, and Culturally Thin: Generative AI as a Medium of Postcolonial Visibility across the Lusophone World",
+      citation: "Zhou, M., & Cao, X. (2026). Emerging Media.",
+      links: [{ label: "DOI", href: "https://doi.org/10.1177/27523543261499832" }]
+    },
+    {
+      type: "chapter",
+      typeLabel: "Book Chapter",
+      group: "2026",
+      title: "Digital approaches to peripheral literary exchange: Mapping Portuguese-Chinese translation networks (1942-2022)",
+      citation: "Zhou, M. (2026). In D. Roig-Sanz & P. Hofeneder (Eds.), Digital Translation History: Processing Historical Data with New Methodologies (pp. 277-303). John Benjamins."
+    },
+    {
+      type: "chapter",
+      typeLabel: "Book Chapter",
+      group: "2026",
+      title: "Exploring the circulation and canonization of Chinese internet literature in Brazil: A case study of Mo Dao Zu Shi",
+      citation: "Zhou, M. (2026). In W. Zhang & S. He (Eds.), Translating Chinese Internet Literature (pp. 102-119). Routledge."
+    },
+    {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2026",
+      title: "Soft Power in Data: Tracing Global Flows of Chinese Literature in the Silk Road Translation Program",
+      citation: "Zhou, M., & Vimr, O. (2026). DH2026, Korea Advanced Institute of Science & Technology, Daejeon."
+    },
+    {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2026",
+      title: "What Makes AI a Good Cultural Mediator? Evidence from Literary Paratexts",
+      citation: "Zhou, M. (2026). Culture \u00d7 AI: Evaluating AI as a Cultural Technology, ICML 2026 Workshop, Seoul.",
+      links: [{ label: "Paper", href: "papers/what-makes-ai-good-cultural-mediator.pdf" }]
+    },
+    {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2026",
+      title: "Networks of Exchange: Chinese and Lusophone Literary Circulation between China, Portugal, and Brazil (2000 to 2025)",
+      citation: "Zhou, M. (2026). Whose East, Which West? Networks, Archives, and Diasporas in China and the Ibero-American World, NYU Madrid."
+    },
+    {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2026",
+      title: "Literary Canons and Algorithmic Framing: Analysis of LLM-Generated Paratexts",
+      citation: "Zhou, M. (2026). HKADH 2026, The Chinese University of Hong Kong."
+    },
+    {
+      type: "preprint",
+      typeLabel: "Preprint",
+      group: "2025",
+      title: "Politically speaking: LLMs on changing international affairs",
+      citation: "Cao, X., Chung, W. K., Zhao, Y., & Zhou, M. (2025). arXiv preprint.",
+      links: [{ label: "arXiv", href: "https://arxiv.org/abs/2510.24582" }]
+    },
+    {
+      type: "journal",
+      typeLabel: "Journal Article",
+      group: "2025",
       title: "Modelling character in translation: Computational and qualitative insights from wuxia fan translations",
       citation: "Zhou, M. (2025). Digital Studies in Language and Literature, 2(2), 246-273.",
       links: [{ label: "DOI", href: "https://doi.org/10.1515/dsll-2025-0017" }]
     },
     {
+      type: "proceeding",
+      typeLabel: "Conference Proceeding",
+      group: "2025",
+      title: "No joke: Refusal policies for LLM cross-cultural sensitivity",
+      citation: "Zhou, M., & Cao, X. (2025). Proceedings of the Americas Conference on Information Systems 2025 (Emergent Research Forum, p. 1192). Best Paper Nominee.",
+      links: [{ label: "Paper", href: "https://aisel.aisnet.org/amcis2025/sig_ccris/sig_ccris/1" }]
+    },
+    {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2025",
+      title: "Mind the Gap: Investigating Digital Humanities Integration in Translation Studies Education",
+      citation: "Zhou, M. (2025). DH2025, NOVA FCSH, Lisbon."
+    },
+    {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2025",
+      title: "Mapping Cultural Diplomacy: A Network Analysis of China's Silk Road Book Project Translation Initiative",
+      citation: "Zhou, M. (2025). HKADH2025, The University of Hong Kong."
+    },
+    {
       type: "journal",
       typeLabel: "Journal Article",
+      group: "2024",
       title: "Three faces of heroism: An empirical study of indirect literary translation between Chinese-English-Portuguese of Wuxia fiction",
       citation: "Zhou, M. (2024). Corpus-based Studies across Humanities, 2(1), 157-186.",
       links: [{ label: "DOI", href: "https://doi.org/10.1515/csh-2024-0009" }]
@@ -161,96 +251,103 @@ window.SITE_CONTENT = {
     {
       type: "journal",
       typeLabel: "Journal Article",
+      group: "2024",
       title: "Exploring homology of fields in translation: A sociological examination of Chinese contemporary literature translation in Portugal and Brazil",
       citation: "Zhou, M. (2024). Babel, 70(6), 852-870.",
       links: [{ label: "DOI", href: "https://doi.org/10.1075/babel.00363.zho" }]
     },
     {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2024",
+      title: "Beyond the Text: Sentiment Analysis of Peritexts in Indirect Translations of Chinese Literature into Portuguese",
+      citation: "Zhou, M. (2024). Corpus-Informed Studies: Methodologies and Applications 2024, Shanghai International Studies University."
+    },
+    {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2024",
+      title: "Building Bridges or Walls? Topic Modeling for Analyzing Trust in Indirect Literary Translation",
+      citation: "Zhou, M. (2024). DH2024, George Mason University. Paul Fortier Prize Nominee."
+    },
+    {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2024",
+      title: "Three Faces of Heroism: An Empirical Study of Indirect Literary Translation between Chinese-English-Portuguese of Wuxia Fiction",
+      citation: "Zhou, M. (2024). 5th East Asian Translation Studies Conference, University of Queensland, Brisbane."
+    },
+    {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2024",
+      title: "Indirect Translation in Global South Literary Exchanges: The China-Brazil Case Study",
+      citation: "Zhou, M. (2024). Decolonising the World Republic of Letters: Translation, Circulation, and Intellectual Networks across the Global South, Fondation Maison des Sciences de l'Homme, Paris."
+    },
+    {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2024",
+      title: "Verses Across Oceans: The Circulation of Classical Chinese Poetry in the Portuguese-Speaking World from the 16th Century to the Present",
+      citation: "Zhou, M. (2024). CUHK-EHESS Symposium on Language and Cultural Contact Along the Frontiers of China, Ancient and Modern, Hong Kong."
+    },
+    {
+      type: "review",
+      typeLabel: "Book Review",
+      group: "2024",
+      title: "Review of Corpora in Interpreting Studies: East Asia Perspective",
+      citation: "Zhou, M. (2024). Journal of Translation Studies, 8(2), 125-129."
+    },
+    {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2023",
+      title: "A computational perspective of fan translation and professional translation: Case study of The Legend of the Condor Heroes of Louis Cha",
+      citation: "Zhou, M. (2023). International Conference of Translation Studies and Digital Humanities, Hong Kong."
+    },
+    {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2023",
+      title: "Homologous Power Dynamics: Shaping the Translation and Reception of Contemporary Chinese Literature in Brazil and Portugal",
+      citation: "Zhou, M. (2023). International Conference on Translation and Power, Hong Kong."
+    },
+    {
+      type: "review",
+      typeLabel: "Book Review",
+      group: "2023",
+      title: "Review of Indirect Translation Explained",
+      citation: "Zhou, M. (2023). Babel, 69(5), 720-723.",
+      links: [{ label: "DOI", href: "https://doi.org/10.1075/babel.23055.zho" }]
+    },
+    {
+      type: "chapter",
+      typeLabel: "Book Chapter",
+      group: "2022",
+      title: "Translation and reception of Sophia de Mello Breyner Andresen in China: From a sociological perspective",
+      citation: "Zhou, M. (2022). In V. Borges (Ed.), Mapas Esquivos (No. 2, pp. 34-45). Cultural Institute Publishing House."
+    },
+    {
+      type: "conference",
+      typeLabel: "Conference Paper",
+      group: "2021",
+      title: "Reception of Contemporary Chinese Literature in Lusophone countries (2000-2020)",
+      citation: "Zhou, M. (2021). 13th Congress of the Chinese Comparative Literature Association, Guilin, China."
+    },
+    {
       type: "journal",
       typeLabel: "Journal Article",
-      title: "Translation of culture-specific concepts in the context of indirect translation: The case of O Assassino",
-      citation: "Zhou, M. (2019). Diacritica, 32(2), 387-412.",
+      group: "2019",
+      title: "Translation of culture-specific concepts in the context of indirect translation (Chinese-English-Portuguese): The case of O Assassino",
+      citation: "Zhou, M. (2019). Diacr\u00edtica, 32(2), 387-412.",
       links: [{ label: "DOI", href: "https://doi.org/10.21814/diacritica.447" }]
     },
     {
       type: "journal",
       typeLabel: "Journal Article",
+      group: "2017",
       title: "A China Fica ao Lado: Memory displacement of Macau in the 20th century",
       citation: "Zhou, M. (2017). Journal of Macau Studies, 2, 65-69."
-    },
-    {
-      type: "chapter",
-      typeLabel: "Book Chapter",
-      title: "Peripheral connections: BERT topic modeling of Chinese literature's Brazilian presence",
-      citation: "Zhou, M. (Accepted). In Beyond the World Capital of Letters. Bloomsbury."
-    },
-    {
-      type: "chapter",
-      typeLabel: "Book Chapter",
-      title: "Mapping the translation and circulation of Portuguese literature in China (1942-2022): A digital humanities approach",
-      citation: "Zhou, M. (Accepted). In Digital Translation History. John Benjamins."
-    },
-    {
-      type: "chapter",
-      typeLabel: "Book Chapter",
-      title: "Exploring the circulation and canonization of Chinese internet literature in Brazil: A case study of Mo Dao Zu Shi",
-      citation: "Zhou, M. (In print). In Translating Chinese Internet Literature. Routledge."
-    },
-    {
-      type: "proceeding",
-      typeLabel: "Conference Proceeding",
-      title: "What Makes AI a Good Cultural Mediator? Evidence from Literary Paratexts",
-      citation: "Zhou, M. (2026). In Culture x AI: Evaluating AI as a Cultural Technology, ICML 2026, Seoul."
-    },
-    {
-      type: "chapter",
-      typeLabel: "Book Chapter",
-      title: "Translation and reception of Sophia de Mello Breyner Andresen in China: From a sociological perspective",
-      citation: "Zhou, M. (2022). In V. Borges (Ed.), Mapas Esquivos (No. 2, pp. 34-45). Cultural Institute Publishing House."
-    },
-    {
-      type: "proceeding",
-      typeLabel: "Conference Proceeding",
-      title: "No joke: Refusal policies for LLM cross-cultural sensitivity",
-      citation: "Zhou, M., & Cao, X. (2025). Proceedings of AMCIS 2025. Best Paper Nominee.",
-      links: [{ label: "Paper", href: "https://aisel.aisnet.org/amcis2025/sig_ccris/sig_ccris/1" }]
-    },
-    {
-      type: "conference",
-      typeLabel: "Conference Paper",
-      title: "Literary Canons and Algorithmic Framing: Analysis of LLM-Generated Paratexts",
-      citation: "Zhou, M. (2026). HKADH 2026, The Chinese University of Hong Kong."
-    },
-    {
-      type: "conference",
-      typeLabel: "Conference Paper",
-      title: "Mind the Gap: Investigating Digital Humanities Integration in Translation Studies Education",
-      citation: "Zhou, M. (2025). DH2025, NOVA FCSH, Lisbon."
-    },
-    {
-      type: "conference",
-      typeLabel: "Conference Paper",
-      title: "Mapping Cultural Diplomacy: A Network Analysis of China's Silk Road Book Project Translation Initiative",
-      citation: "Zhou, M. (2025). HKADH2025, The University of Hong Kong."
-    },
-    {
-      type: "conference",
-      typeLabel: "Conference Paper",
-      title: "Building Bridges or Walls? Topic Modeling for Analyzing Trust in Indirect Literary Translation",
-      citation: "Zhou, M. (2024). DH2024, George Mason University. Paul Fortier Prize Nominee."
-    },
-    {
-      type: "review",
-      typeLabel: "Book Review",
-      title: "Review of Corpora in Interpreting Studies: East Asia Perspective",
-      citation: "Zhou, M. (2024). Journal of Translation Studies, 8(2), 125-129."
-    },
-    {
-      type: "review",
-      typeLabel: "Book Review",
-      title: "Review of Indirect Translation Explained",
-      citation: "Zhou, M. (2023). Babel, 69(5), 720-723.",
-      links: [{ label: "DOI", href: "https://doi.org/10.1075/babel.23055.zho" }]
     }
   ],
 

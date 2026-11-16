@@ -149,14 +149,18 @@ const renderContent = () => {
     "Review of Indirect Translation Explained": { group: "2023", thumb: "thumb-book", label: "Book" }
   };
 
-  const publicationGroups = ["Forthcoming", "2026", "2025", "2024", "2023", "2022", "2019", "2017"];
+  const publicationGroups = new Map();
+  for (const publication of content.publications) {
+    const group = publication.group || publicationPreviewMeta[publication.title]?.group;
+    if (!group) continue;
+    if (!publicationGroups.has(group)) publicationGroups.set(group, []);
+    publicationGroups.get(group).push(publication);
+  }
   const publicationList = document.querySelector('.publication-list');
   if (publicationList) {
     publicationList.classList.add('chronological-publications');
-    publicationList.innerHTML = publicationGroups
-      .map((group) => {
-        const items = content.publications.filter((publication) => publicationPreviewMeta[publication.title]?.group === group);
-        if (!items.length) return '';
+    publicationList.innerHTML = [...publicationGroups]
+      .map(([group, items]) => {
         return `
           <h3 class="pub-group-heading">${escapeHtml(group)}</h3>
           ${items
