@@ -4165,6 +4165,13 @@
       <p>(c) 2026 Lidia Zhou. Built for GitHub Pages.</p>
       <a href="#top">Back to top</a>
     </footer>
+    <style id="publication-filter-visibility">
+      /* Filtering must override the publication layout's forced display rules. */
+      html #publications .publication-list.chronological-publications article.publication-card.visual-publication.is-hidden,
+      html #publications .publication-list .pub-group-heading.is-hidden {
+        display: none !important;
+      }
+    </style>
     <script src="content.js?v=20261116-publications"></script>
     <script src="script.js?v=20261116-publications"></script>
   </body>
